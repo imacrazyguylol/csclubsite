@@ -1,0 +1,140 @@
+html, body {
+  height: 100%;
+  width: 100%;
+}
+body {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  font-size: 13px;
+  line-height: 1.231;
+  min-width: 1200px;
+  overflow-x: hidden;
+}
+.marquee {
+  animation: marquee 30s linear infinite;
+}
+#wrapper {
+  position: relative;
+  margin: 0 auto;
+  display: flex;
+  flex-flow: column wrap;
+  font-family: "Barlow", sans-serif;
+}
+#top {
+  height: 7%;
+  background-color: #F5F5F5;
+  border-bottom: solid;
+  border-bottom-color: #056600;
+  border-bottom-width: 2px;
+  color: #067A00;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 1;
+}
+#footer {
+  background-color: #F5F5F5;
+  border-top: solid;
+  border-top-color: #056600;
+  color: black;
+  font-family: "Barlow", sans-serif;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 1;
+}
+#title {
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 3em;
+  text-align: left;
+  padding-left: 20%;
+  line-height: 1.6;
+  color: #056600;
+  font-weight: normal;
+  display: flex;
+  flex-flow: row no-wrap;
+}
+#title a {
+  text-decoration: none;
+}
+#title img {
+  margin: 15%;
+}
+#title a:link {
+  color: inherit;
+}
+#title a:visited {
+  color: inherit;
+}
+#underTitle {
+  width: 100%;
+  background-color: #056600;
+  color: white;
+  font-size: 1.5em;
+  display: flex;
+  justify-content: center;
+}
+#underTitle a {
+  text-decoration: none;
+  color: inherit;
+  padding-left: 3%;
+  padding-right: 3%;
+}
+#underTitle a:link a:visited {
+  color: inherit;
+}
+#underTitle a:hover {
+  color: black;
+  background-color: #F5F5F5;
+}
+#body {
+  display: flex;
+  flex-direction: row;
+  font-size: 1.3em;
+  overflow: hidden;
+}
+#body hr {
+  border-top: 2px solid #056600;
+}
+#sidebar {
+  background-color: rgba(200, 239, 198, 0.5);
+  width: 60%;
+}
+#sidebar h1,h2,h3,h4,h5,h6 {
+  color: #056600;
+  text-align: left;
+  margin-left: 10%;
+  border-bottom: solid #056600 2px;
+}
+#sidebar p {
+  color: #1d7519;
+  text-align: left;
+  margin-left: 17%;
+  margin-right: 2%;
+  font-size: 1.1em;
+}
+#sidebar p, img, h1, h2, h3, h4, h5, h6 {
+  margin-top: 3%;
+}
+#content {
+  margin: 3%;
+  height: auto;
+  width: 40%;
+  font-size: 1.1em;
+}
+#content h1,h2,h3,h4,h5,h6 {
+  border-bottom: solid #056600 2px;
+}
+@keyframes marquee {
+  0% {
+transform: translateX(100%);
+}
+100% {
+transform: translateX(-100%);
+}
+}
+
+
+
+
+
+
