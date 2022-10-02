@@ -1,3 +1,10 @@
+:root{
+  --kellyGreen: #056600;
+  --darkModeGray: #303A40;
+  --blueGray: #46545D;
+  --offWhite: #F5F5F5;
+}
+
 html, body {
   height: 100%;
   width: 100%;
@@ -25,7 +32,7 @@ body {
   height: 7%;
   background-color: #F5F5F5;
   border-bottom: solid;
-  border-bottom-color: #056600;
+  border-bottom-color: var(--kellyGreen);
   border-bottom-width: 2px;
   color: #067A00;
   font-weight: 400;
@@ -35,23 +42,22 @@ body {
 #footer {
   background-color: #F5F5F5;
   border-top: solid;
-  border-top-color: #056600;
+  border-top-color: var(--kellyGreen);
   color: black;
-  font-family: "Barlow", sans-serif;
+  font-family: "Brother-1816", sans-serif;
   font-weight: 400;
   font-size: 17px;
   line-height: 1;
 }
 #title {
-  font-family: "Barlow Condensed", sans-serif;
+  font-family: "brother-1816", "barlow-condensed", sans-serif;
   font-size: 3em;
   text-align: left;
-  padding-left: 20%;
-  line-height: 1.6;
-  color: #056600;
+  color: var(--kellyGreen);
   font-weight: normal;
   display: flex;
   flex-flow: row no-wrap;
+  justify-content: center;
 }
 #title a {
   text-decoration: none;
@@ -65,24 +71,24 @@ body {
 #title a:visited {
   color: inherit;
 }
-#underTitle {
+#navBar {
   width: 100%;
-  background-color: #056600;
+  background-color: var(--kellyGreen);
   color: white;
   font-size: 1.5em;
   display: flex;
   justify-content: center;
 }
-#underTitle a {
+#navBar a {
   text-decoration: none;
   color: inherit;
   padding-left: 3%;
   padding-right: 3%;
 }
-#underTitle a:link a:visited {
+#navBar a:link a:visited {
   color: inherit;
 }
-#underTitle a:hover {
+#navBar a:hover {
   color: black;
   background-color: #F5F5F5;
 }
@@ -93,17 +99,17 @@ body {
   overflow: hidden;
 }
 #body hr {
-  border-top: 2px solid #056600;
+  border-top: 2px solid var(--kellyGreen);
 }
 #sidebar {
   background-color: rgba(200, 239, 198, 0.5);
   width: 60%;
 }
 #sidebar h1,h2,h3,h4,h5,h6 {
-  color: #056600;
+  color: var(--kellyGreen);
   text-align: left;
   margin-left: 10%;
-  border-bottom: solid #056600 2px;
+  border-bottom: solid var(--kellyGreen) 2px;
 }
 #sidebar p {
   color: #1d7519;
@@ -112,7 +118,7 @@ body {
   margin-right: 2%;
   font-size: 1.1em;
 }
-#sidebar p, img, h1, h2, h3, h4, h5, h6 {
+#sidebar p, img, h2, h3, h4, h5, h6 {
   margin-top: 3%;
 }
 #content {
@@ -122,7 +128,7 @@ body {
   font-size: 1.1em;
 }
 #content h1,h2,h3,h4,h5,h6 {
-  border-bottom: solid #056600 2px;
+  border-bottom: solid var(--kellyGreen) 2px;
 }
 @keyframes marquee {
   0% {
