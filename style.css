@@ -47,7 +47,7 @@ body {
   font-size: 3em;
   text-align: left;
   padding-left: 20%;
-  line-height: 1.6;
+  line-height: 1;
   color: #056600;
   font-weight: normal;
   display: flex;
@@ -100,6 +100,7 @@ body {
   width: 60%;
 }
 #sidebar h1,h2,h3,h4,h5,h6 {
+  font-size: 1.7em;
   color: #056600;
   text-align: left;
   margin-left: 10%;
@@ -111,18 +112,13 @@ body {
   margin-left: 17%;
   margin-right: 2%;
   font-size: 1.1em;
-}
-#sidebar p, img, h1, h2, h3, h4, h5, h6 {
-  margin-top: 3%;
+  padding-top: 3%;
 }
 #content {
-  margin: 3%;
+  padding-top: 3%;
   height: auto;
   width: 40%;
   font-size: 1.1em;
-}
-#content h1,h2,h3,h4,h5,h6 {
-  border-bottom: solid #056600 2px;
 }
 @keyframes marquee {
   0% {
