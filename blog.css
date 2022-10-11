@@ -91,36 +91,23 @@ body {
   flex-direction: row;
   font-size: 1.3em;
   overflow: hidden;
+  background-color: #95A3B3;
 }
-#body hr {
-  border-top: 2px solid #056600;
-}
-#sidebar {
-  background-color: rgba(200, 239, 198, 0.5);
-  width: 60%;
-}
-#sidebar h1,h2,h3,h4,h5,h6 {
-  font-size: 1.7em;
-  color: black;
+#blog {
+  border: solid red 5px;
+  width: 100%;
+  margin-left: 22%;
+  margin-right: 22%;
   text-align: left;
-  margin-left: 10%;
+  font-size: 1.2em;
+  background-color: #F5F5F5;
 }
-#sidebar p {
-  color: #1d7519;
-  text-align: left;
-  margin-left: 17%;
-  margin-right: 2%;
-  font-size: 1.1em;
-  padding-top: 3%;
+#blogTitle {
+  text-align: center;
+  border: solid blue 5px;
 }
-#content {
-  padding-top: 3%;
-  height: auto;
-  width: 40%;
-  font-size: 1.1em;
-}
-#content h1 {
-  color: #056600;
+#blogText {
+  border: solid green 5px;
 }
 @keyframes marquee {
   0% {
