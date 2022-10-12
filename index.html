@@ -1,58 +1,52 @@
+<!-- https://github.com/imacrazyguylol/csclubsite/tree/main -->
+
 <!DOCTYPE html>
 <html>
 
 <head>
+  <!-- LINKS -->
+  
+  <!-- META -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <title>Arundel High CS Club</title>
-  <link href="style.css" rel="stylesheet" type="text/css" />
+  
+  <!-- FONTS -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed:wght@500&display=swap"
     rel="stylesheet">
-  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="stylesheet" href="https://use.typekit.net/nca3ags.css">
+  <link rel="icon" type="image/png" href="assets/favicon.png">
 
+  <!-- OTHER -->
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" type="text/css" href="xbbcode.css">
 </head>
 
 <body>
 
-  <div id="wrapper">
-    <div id="top">
-      <p class="marquee">Support the Arundel High CS Club by visiting (Merchandise Website)!</p>
-    </div>
-    
     <div id="title">
       <div>
-        <h1><a href="https://arcade-machine-website.tanjeedfaruque.repl.co/index.html">ARUNDEL HIGH CS CLUB</a></h1>
+        <a href="index.html"><h1>ARUNDEL HIGH CS CLUB</h1></a>
       </div>
       <div>
-        <a href="https://arcade-machine-website.tanjeedfaruque.repl.co/index.html"><img src="assets/logo.png"></a>
+        <a href="index.html"><img src="assets/logo.png"></a>
       </div>
-
     </div>
-    <div id="underTitle">
 
-      <a href="https://arcade-machine-website-about.tanjeedfaruque.repl.co/">
+    <div id="navBar">
+
+      <a href="blog.html">
         <div>
-          <p>What We Do</p>
+          <p>Our Blog</p>
         </div>
       </a>
 
-      <a href="index.html">
+      <a href="member.html">
         <div>
-          <p>Testing Text</p>
-        </div>
-      </a>
-
-      <a href="index.html">
-        <div>
-          <p>Testing Text</p>
-        </div>
-      </a>
-
-      <a href="index.html">
-        <div>
-          <p>Testing Text</p>
+          <p>Meet our members</p>
         </div>
       </a>
 
@@ -79,38 +73,12 @@
     <div id="body">
 
       <div id="sidebar">
-        <h2>You can reach us through our social media!</h2>
+        <h2>Social Media</h2>
         <div>
           <img src="assets/fbook.png" style="margin: 3%">
           <img src="assets/twitter.png" style="margin: 3%">
         </div>
-        <p>Buy Our Merch! Our mech is really nice looking and comfortable to wear. You can wear it all times, whether it
-          be during the spring, summer, fall, or winter!</p>
-        <p>Buy Our Merch!</p>
-        <p>Buy Our Merch!</p>
-        <p>Buy Our Merch!</p>
-        <p>Buy Our Merch!</p>
-        <p>Buy Our Merch!</p>
-        <p>Buy Our Merch!</p>
-        <p>Buy Our Merch!</p>
-        <p>Buy Our Merch!</p>
-        <p>Buy Our Merch!</p>
-        <p>Buy Our Merch!</p>
-        <p>Buy Our Merch!</p>
-        <p>Buy Our Merch!</p>
-        <p>Buy Our Merch!</p>
-        <p>Buy Our Merch!</p>
-        <p>Buy Our Merch!</p>
-        <p>Buy Our Merch!</p>
-        <p>Buy Our Merch!</p>
-        <p>Buy Our Merch!</p>
-        <p>Buy Our Merch!</p>
-        <p>Buy Our Merch!</p>
-        <p>Buy Our Merch!</p>
-        <p>Buy Our Merch!</p>
-        <p>Buy Our Merch!</p>
-        <p>Buy Our Merch!</p>
-        <p>Buy Our Merch!</p>
+
       </div>
 
       <div id="content">
@@ -121,13 +89,11 @@
         </div>
 
         <div>
-          <p>Hi, Welcome to Computer Science Club! In this club we [Stuff we do]. Our current project is right now is a
-            homemade
-            arcade machine with a bunch of retro games, which include, [List].</p>
+          <p>Hi, Welcome to Computer Science Club! In this club we have multiple activities such as web development, game design, hardware coding and engineering, and 3d printing. Our current project is right now is an arcade machine fitted with a bunch of retro games from many consoles such as the Gameboy Advance, SNES, NES, DS.</p>
         </div>
 
         <div>
-          <p>Our members include [Members].</p>
+          <p>You can meet our members by going to Meet our members in the navigation menu</p>
         </div>
 
         <div>
@@ -148,8 +114,12 @@
     </div>
   </div>
 
-  <script src="script.js"></script>
+  <!-- SCRIPTS -->
+  <script type="text/babel"src="script.js"></script>
+  <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>  
   <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+  <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+  <script src="xbbcode.js"></script>
 </body>
 
 </html>
