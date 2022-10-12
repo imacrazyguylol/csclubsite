@@ -1,0 +1,125 @@
+html, body {
+  height: 100%;
+  width: 100%;
+}
+body {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  font-size: 13px;
+  line-height: 1.231;
+  min-width: 1200px;
+  overflow-x: hidden;
+}
+.marquee {
+  animation: marquee 30s linear infinite;
+}
+#wrapper {
+  position: relative;
+  margin: 0 auto;
+  display: flex;
+  flex-flow: column wrap;
+  font-family: "Barlow", sans-serif;
+}
+#top {
+  height: 7%;
+  background-color: #F5F5F5;
+  border-bottom: solid;
+  border-bottom-color: #056600;
+  border-bottom-width: 2px;
+  color: #067A00;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 1;
+}
+#footer {
+  background-color: #F5F5F5;
+  border-top: solid;
+  border-top-color: #056600;
+  color: black;
+  font-family: "Barlow", sans-serif;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 1;
+}
+#title {
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 3em;
+  text-align: left;
+  padding-left: 20%;
+  line-height: 1;
+  color: #056600;
+  font-weight: normal;
+  display: flex;
+  flex-flow: row no-wrap;
+}
+#title a {
+  text-decoration: none;
+}
+#title img {
+  margin: 15%;
+}
+#title a:link {
+  color: inherit;
+}
+#title a:visited {
+  color: inherit;
+}
+#underTitle {
+  width: 100%;
+  background-color: #056600;
+  color: white;
+  font-size: 1.5em;
+  display: flex;
+  justify-content: center;
+}
+#underTitle a {
+  text-decoration: none;
+  color: inherit;
+  padding-left: 3%;
+  padding-right: 3%;
+}
+#underTitle a:link a:visited {
+  color: inherit;
+}
+#underTitle a:hover {
+  color: black;
+  background-color: #F5F5F5;
+}
+#body {
+  display: flex;
+  flex-direction: row;
+  font-size: 1.3em;
+  overflow: hidden;
+  background-color: #95A3B3;
+}
+#blog {
+  border: solid red 5px;
+  width: 100%;
+  margin-left: 22%;
+  margin-right: 22%;
+  text-align: left;
+  font-size: 1.2em;
+  background-color: #F5F5F5;
+}
+#blogTitle {
+  text-align: center;
+  border: solid blue 5px;
+}
+#blogText {
+  border: solid green 5px;
+}
+@keyframes marquee {
+  0% {
+transform: translateX(100%);
+}
+100% {
+transform: translateX(-100%);
+}
+}
+
+
+
+
+
+
