@@ -8,15 +8,15 @@ class toggleTheme extends React.Component {
         this.state = {
             dark: true,
         };
+    }
 
-        render() {
-            return(
-                <button
-                    className='themeToggleButton'
-                    onClick={() => this.state.dark = !this.state.dark}
-                ></button>
-                //button should have custom svg based on background colors
-            );
-        }
+    render() {
+        return(
+            <button
+                className='themeToggleButton'
+                onClick={() => this.state.dark = !this.state.dark}
+            ></button>
+            //button should have custom svg based on background colors
+        );
     }
 }
