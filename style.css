@@ -140,7 +140,11 @@ transform: translateX(-100%);
 }
 }
 
-
+button.toggleThemeButton {
+  position: sticky;
+  border-radius: 10%;
+  /* style */
+}
 
 
 
