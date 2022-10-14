@@ -2,7 +2,7 @@ const { React, ReactDOM } = require('reactjs');
 
 const root = ReactDOM.createRoot(document.getElementById('themeToggleContainer'));
 
-class toggleTheme extends React.Component {
+class ToggleTheme extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -20,3 +20,5 @@ class toggleTheme extends React.Component {
         );
     }
 }
+
+root.render(ToggleTheme);
