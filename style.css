@@ -78,6 +78,8 @@ body {
   font-size: 1.5em;
   display: flex;
   justify-content: center;
+  font-family: input-mono, monospace;
+  font-weight: 400;
 }
 #navBar a {
   text-decoration: none;
