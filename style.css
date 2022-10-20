@@ -86,6 +86,7 @@ body {
   color: inherit;
   padding-left: 3%;
   padding-right: 3%;
+  transition: 300ms;
 }
 #navBar a:link a:visited {
   color: inherit;
@@ -105,10 +106,15 @@ body {
 }
 #sidebar {
   background-color: rgba(200, 239, 198, 0.5);
-  width: 60%;
+  width: 35%;
 }
-#sidebar h1,h2,h3,h4,h5,h6 {
-  color: var(--kellyGreen);
+#sidebar img {
+  width: 100px;
+  height: auto;
+}
+#sidebar h1,#sidebar h2,#sidebar h3,#sidebar h4,#sidebar h5,#sidebar h6 {
+  font-size: 1.7em;
+  color: black;
   text-align: left;
   margin-left: 10%;
   border-bottom: solid var(--kellyGreen) 2px;
@@ -127,11 +133,85 @@ body {
 #content {
   padding-top: 3%;
   height: auto;
-  width: 40%;
+  width: 65%;
   font-size: 1.1em;
 }
-#content h1,h2,h3,h4,h5,h6 {
-  border-bottom: solid var(--kellyGreen) 2px;
+#content h1, #content h2, #content h3, #content h4, #content h5, #content h6 {
+  color: #056600;
+  font-size: 2.5rem;
+}
+.slideshow-container {
+  max-width: 500px;
+  position: relative;
+  margin: auto;
+  border: outset #BCE4E8 5px;
+}
+.slides {
+  display: none;
+}
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: #303A40;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.prev {
+  left: 0;
+  border-radius: 0 3px 3px 0;
+}
+.prev:hover, .next:hover {
+  background-color: rgba(245,245,245,0.8);
+}
+.caption {
+  color: #303A40;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+.slidePosition {
+  color: black;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+.fade {
+  animation: fade 1.5s;
+}
+@keyframes fade {
+  0% {
+    opacity: 0.4;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+#contentText {
+  text-align: left;
+  border: solid red 5px;
+  margin: 2%;
+}
+#contentText h3 {
+  color: #46545D;
+  margin-left: 3%;
+  line-height: 2;
+  border-bottom: dashed blue 3px;
+  font-size: 1.3em;
 }
 @keyframes marquee {
   0% {
@@ -139,7 +219,7 @@ transform: translateX(100%);
 }
 100% {
 transform: translateX(-100%);
-}
+  }
 }
 
 button.toggleThemeButton {

@@ -78,6 +78,7 @@ body {
   color: inherit;
   padding-left: 3%;
   padding-right: 3%;
+  transition: 300ms;
 }
 #underTitle a:link a:visited {
   color: inherit;
