@@ -7,49 +7,49 @@ font-style: normal; -->
 <html>
 
 <head>
+  <!-- LINKS -->
+  
+  <!-- META -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <title>Arundel High CS Club</title>
-  <link href="style.css" rel="stylesheet" type="text/css" />
+  
+  <!-- FONTS -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed:wght@500&display=swap"
     rel="stylesheet">
+  <link rel="stylesheet" href="https://use.typekit.net/nca3ags.css">
   <link rel="icon" type="image/png" href="assets/favicon.png">
 
+  <!-- OTHER -->
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" type="text/css" href="xbbcode.css">
 </head>
 
 <body>
 
-  <div id="wrapper">
-    <div id="top">
-      <p class="marquee">Support the Arundel High CS Club by visiting (Merchandise Website)!</p>
-    </div>
+    <div id="themeToggleContainer"><!-- DON'T PUT ANYTHING IN THIS DIV --></div>
     
     <div id="title">
       <div>
-        <h1><a href="https://arcade-machine-website.tanjeedfaruque.repl.co/index.html">ARUNDEL HIGH CS CLUB</a></h1>
+        <a href="index.html"><h1>ARUNDEL HIGH CS CLUB</h1></a>
       </div>
       <div>
-        <a href="https://arcade-machine-website.tanjeedfaruque.repl.co/index.html"><img src="assets/logo.png"></a>
+        <a href="index.html"><img src="assets/logo.png"></a>
       </div>
-
     </div>
-    <div id="underTitle">
 
-      <a href="index.html">
-        <div>
-          <p>Home</p>
-        </div>
-      </a>
-      
-      <a href="blog.html">
+    <div id="navBar">
+
+      <a href="./pages/blog/blog.html">
         <div>
           <p>Our Blog</p>
         </div>
       </a>
 
-      <a href="member.html">
+      <a href="./pages/member/member.html">
         <div>
           <p>Meet our members</p>
         </div>
@@ -78,25 +78,6 @@ font-style: normal; -->
           <img src="assets/twitter.png" style="margin: 3%">
         </div>
 
-        <br>
-
-        <h2>Merch for sale!</h2>
-        
-        <p>Buy Our Merch! Our mech is really nice looking and comfortable to wear. You can wear it all times, whether it
-          be during the spring, summer, fall, or winter!</p>
-        <p>Buy Our Merch!</p>
-        <p>Buy Our Merch!</p>
-        <p>Buy Our Merch!</p>
-        <p>Buy Our Merch!</p>
-        <p>Buy Our Merch!</p>
-        <p>Buy Our Merch!</p>
-        <p>Buy Our Merch!</p>
-        <p>Buy Our Merch!</p>
-        <p>Buy Our Merch!</p>
-        <p>Buy Our Merch!</p>
-        <p>Buy Our Merch!</p>
-        <p>Buy Our Merch!</p>
-        <h2>Future plans</h2>
       </div>
 
       <div id="content">
@@ -152,7 +133,13 @@ font-style: normal; -->
     </div>
   </div>
 
-  <script src="script.js"></script>
+  <!-- SCRIPTS -->
+  <script type="text/babel"src="script.js"></script>
+  <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>  
+  <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+  <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+  <script src="xbbcode.js"></script>
+  <script src="./src/toggleTheme.jsx"></script>
 </body>
 
 </html>
