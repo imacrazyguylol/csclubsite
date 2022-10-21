@@ -8,7 +8,7 @@ function moveSlide(num) {
 }
 function showSlides(n) {
   let i;
-  var slides = document.getElementByClassName("slides");
+  var slides = document.getElementsByClassName("slides");
   if(n > slides.length) {
     slideCounter = 1;
   }
