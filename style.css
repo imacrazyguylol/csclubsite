@@ -3,6 +3,8 @@
   --darkModeGray: #303A40;
   --blueGray: #46545D;
   --offWhite: #F5F5F5;
+
+  --mainFont: input-mono, monospace;
 }
 
 html, body {
@@ -30,7 +32,7 @@ body {
 }
 #top {
   height: 7%;
-  background-color: #F5F5F5;
+  background-color: var(--offWhite);
   border-bottom: solid;
   border-bottom-color: var(--kellyGreen);
   border-bottom-width: 2px;
@@ -40,7 +42,7 @@ body {
   line-height: 1;
 }
 #footer {
-  background-color: #F5F5F5;
+  background-color: var(--offWhite);
   border-top: solid;
   border-top-color: var(--kellyGreen);
   color: black;
@@ -78,7 +80,7 @@ body {
   font-size: 1.5em;
   display: flex;
   justify-content: center;
-  font-family: input-mono, monospace;
+  font-family: var(--mainFont);
   font-weight: 400;
 }
 #navBar a {
@@ -93,7 +95,7 @@ body {
 }
 #navBar a:hover {
   color: black;
-  background-color: #F5F5F5;
+  background-color: var(--offWhite);
 }
 #body {
   display: flex;
