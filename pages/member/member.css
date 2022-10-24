@@ -1,3 +1,12 @@
+:root{
+  --kellyGreen: #056600;
+  --darkModeGray: #303A40;
+  --blueGray: #46545D;
+  --offWhite: #F5F5F5;
+
+  --mainFont: input-mono, monospace;
+}
+
 html, body {
   height: 100%;
   width: 100%;
@@ -21,37 +30,25 @@ body {
   flex-flow: column wrap;
   font-family: "Barlow", sans-serif;
 }
-#top {
-  height: 7%;
-  background-color: #F5F5F5;
-  border-bottom: solid;
-  border-bottom-color: #056600;
-  border-bottom-width: 2px;
-  color: #067A00;
-  font-weight: 400;
-  font-size: 17px;
-  line-height: 1;
-}
 #footer {
-  background-color: #F5F5F5;
+  background-color: var(--offWhite);
   border-top: solid;
-  border-top-color: #056600;
+  border-top-color: var(--kellyGreen);
   color: black;
-  font-family: "Barlow", sans-serif;
+  font-family: "Brother-1816", sans-serif;
   font-weight: 400;
   font-size: 17px;
   line-height: 1;
 }
 #title {
-  font-family: "Barlow Condensed", sans-serif;
+  font-family: "brother-1816", "barlow-condensed", sans-serif;
   font-size: 3em;
   text-align: left;
-  padding-left: 20%;
-  line-height: 1;
-  color: #056600;
+  color: var(--kellyGreen);
   font-weight: normal;
   display: flex;
   flex-flow: row no-wrap;
+  justify-content: center;
 }
 #title a {
   text-decoration: none;
@@ -65,6 +62,31 @@ body {
 #title a:visited {
   color: inherit;
 }
+
+#navBar {
+  width: 100%;
+  background-color: var(--kellyGreen);
+  color: white;
+  font-size: 1.5em;
+  display: flex;
+  justify-content: center;
+  font-family: var(--mainFont);
+  font-weight: 400;
+}
+#navBar a {
+  text-decoration: none;
+  color: inherit;
+  padding-left: 3%;
+  padding-right: 3%;
+}
+#navBar a:link a:visited {
+  color: inherit;
+}
+#navBar a:hover {
+  color: black;
+  background-color: var(--offWhite);
+}
+
 #underTitle {
   width: 100%;
   background-color: #056600;
@@ -84,7 +106,7 @@ body {
 }
 #underTitle a:hover {
   color: black;
-  background-color: #F5F5F5;
+  background-color: var(--offWhite);
 }
 #body {
   font-size: 1.3em;
