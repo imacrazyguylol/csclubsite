@@ -1,3 +1,4 @@
+
 html, body {
   height: 100%;
   width: 100%;
@@ -39,7 +40,7 @@ body {
   color: black;
   font-family: "Barlow", sans-serif;
   font-weight: 400;
-  font-size: 17px;
+  font-size: 1.6em;
   line-height: 1;
 }
 #title {
@@ -131,6 +132,7 @@ body {
   position: relative;
   margin: auto;
   margin-left: 30%;
+  margin-bottom: 5%;
   border: outset #BCE4E8 5px;
 }
 .slides {
@@ -183,6 +185,7 @@ body {
 #contentText {
   text-align: left;
   margin: 2%;
+  margin-bottom: 10%;
 }
 #contentText ul {
   list-style: url("assets/html.png"); 
