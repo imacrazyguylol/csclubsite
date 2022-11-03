@@ -1,4 +1,3 @@
-<<<<<<< HEAD:member.css
 :root {
   --underTitleText: white;
   --underTitleBackground: #056600;
@@ -6,9 +5,6 @@
   --borderColor: #056600;
   --topNBottomBackgroundColor: #F5F5F5;
   --underTitleHover: #F5F5F5;
-}
-=======
-:root{
   --kellyGreen: #056600;
   --darkModeGray: #303A40;
   --blueGray: #46545D;
@@ -17,7 +13,6 @@
   --mainFont: input-mono, monospace;
 }
 
->>>>>>> refs/remotes/origin/Tanjeed:pages/member/member.css
 html, body {
   height: 100%;
   width: 100%;
@@ -50,14 +45,9 @@ body {
   font-weight: 400;
   font-size: 1.6em;
   line-height: 1;
-}
+
 #title {
-<<<<<<< HEAD:member.css
-  letter-spacing: 0.1rem;
-  font-family: "Barlow Condensed", sans-serif;
-=======
   font-family: "brother-1816", "barlow-condensed", sans-serif;
->>>>>>> refs/remotes/origin/Tanjeed:pages/member/member.css
   font-size: 3em;
   text-align: left;
   color: var(--kellyGreen);
@@ -145,7 +135,7 @@ body {
 .portfolio {
   border-radius: 20px;
   border: solid #056600 2px;
-  box-shadow: rgba(0, 0, 0, 0.3) 0px 4px 12px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
   background-color: white;
 }
 .portfolio img {
