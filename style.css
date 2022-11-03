@@ -1,3 +1,14 @@
+<<<<<<< HEAD
+=======
+:root{
+  --kellyGreen: #056600;
+  --darkModeGray: #303A40;
+  --blueGray: #46545D;
+  --offWhite: #F5F5F5;
+
+  --mainFont: input-mono, monospace;
+}
+>>>>>>> refs/remotes/origin/Tanjeed
 
 html, body {
   height: 100%;
@@ -24,9 +35,9 @@ body {
 }
 #top {
   height: 7%;
-  background-color: #F5F5F5;
+  background-color: var(--offWhite);
   border-bottom: solid;
-  border-bottom-color: #056600;
+  border-bottom-color: var(--kellyGreen);
   border-bottom-width: 2px;
   color: #067A00;
   font-weight: 400;
@@ -34,26 +45,29 @@ body {
   line-height: 1;
 }
 #footer {
-  background-color: #F5F5F5;
+  background-color: var(--offWhite);
   border-top: solid;
-  border-top-color: #056600;
+  border-top-color: var(--kellyGreen);
   color: black;
-  font-family: "Barlow", sans-serif;
+  font-family: "Brother-1816", sans-serif;
   font-weight: 400;
   font-size: 1.6em;
   line-height: 1;
 }
 #title {
+<<<<<<< HEAD
   letter-spacing: 0.1rem;
   font-family: "Barlow Condensed", sans-serif;
+=======
+  font-family: "brother-1816", "barlow-condensed", sans-serif;
+>>>>>>> refs/remotes/origin/Tanjeed
   font-size: 3em;
   text-align: left;
-  padding-left: 20%;
-  line-height: 1;
-  color: #056600;
+  color: var(--kellyGreen);
   font-weight: normal;
   display: flex;
   flex-flow: row no-wrap;
+  justify-content: center;
 }
 #title a {
   text-decoration: none;
@@ -67,33 +81,48 @@ body {
 #title a:visited {
   color: inherit;
 }
-#underTitle {
+#navBar {
   width: 100%;
-  background-color: #056600;
+  background-color: var(--kellyGreen);
   color: white;
   font-size: 1.5em;
   display: flex;
   justify-content: center;
+  font-family: var(--mainFont);
+  font-weight: 400;
 }
-#underTitle a {
+#navBar a {
   text-decoration: none;
   color: inherit;
   padding-left: 3%;
   padding-right: 3%;
   transition: 300ms;
 }
-#underTitle a:link a:visited {
+#navBar a:link a:visited {
   color: inherit;
 }
-#underTitle a:hover {
+#navBar a:hover {
   color: black;
-  background-color: #F5F5F5;
+  background-color: var(--offWhite);
 }
 #body {
   display: flex;
   flex-direction: row;
   font-size: 1.3em;
   overflow: hidden;
+}
+<<<<<<< HEAD
+#sidebar {
+  background-color: rgba(200, 239, 198, 0.5);
+  width: 35%;
+}
+#sidebar img {
+  width: 100px;
+  height: auto;
+}
+=======
+#body hr {
+  border-top: 2px solid var(--kellyGreen);
 }
 #sidebar {
   background-color: rgba(200, 239, 198, 0.5);
@@ -103,11 +132,17 @@ body {
   width: 100px;
   height: auto;
 }
+>>>>>>> refs/remotes/origin/Tanjeed
 #sidebar h1,#sidebar h2,#sidebar h3,#sidebar h4,#sidebar h5,#sidebar h6 {
   font-size: 1.7em;
   color: black;
   text-align: left;
   margin-left: 10%;
+<<<<<<< HEAD
+=======
+  border-bottom: solid var(--kellyGreen) 2px;
+
+>>>>>>> refs/remotes/origin/Tanjeed
 }
 #sidebar p {
   color: #1d7519;
@@ -115,7 +150,9 @@ body {
   margin-left: 17%;
   margin-right: 2%;
   font-size: 1.1em;
-  padding-top: 3%;
+}
+#sidebar p, img, h2, h3, h4, h5, h6 {
+  margin-top: 3%;
 }
 #content {
   padding-top: 3%;
@@ -124,15 +161,22 @@ body {
   font-size: 1.1em;
 }
 #content h1, #content h2, #content h3, #content h4, #content h5, #content h6 {
+<<<<<<< HEAD
   color: #303A40;
+=======
+  color: #056600;
+>>>>>>> refs/remotes/origin/Tanjeed
   font-size: 2.5rem;
 }
 .slideshow-container {
   max-width: 500px;
   position: relative;
   margin: auto;
+<<<<<<< HEAD
   margin-left: 30%;
   margin-bottom: 5%;
+=======
+>>>>>>> refs/remotes/origin/Tanjeed
   border: outset #BCE4E8 5px;
 }
 .slides {
@@ -182,6 +226,7 @@ body {
 .fade {
   animation: fade 1.5s;
 }
+<<<<<<< HEAD
 #contentText {
   text-align: left;
   margin: 2%;
@@ -189,10 +234,25 @@ body {
 }
 #contentText ul {
   list-style: url("assets/html.png"); 
+=======
+@keyframes fade {
+  0% {
+    opacity: 0.4;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+#contentText {
+  text-align: left;
+  border: solid red 5px;
+  margin: 2%;
+>>>>>>> refs/remotes/origin/Tanjeed
 }
 #contentText h3 {
   color: #46545D;
   margin-left: 3%;
+<<<<<<< HEAD
   margin-right: 3%;
   line-height: 2;
   border-bottom: dashed #303A40 3px;
@@ -202,6 +262,12 @@ body {
   color: #7F8B99;
   margin-left: 5%;
 }
+=======
+  line-height: 2;
+  border-bottom: dashed blue 3px;
+  font-size: 1.3em;
+}
+>>>>>>> refs/remotes/origin/Tanjeed
 @keyframes marquee {
   0% {
 transform: translateX(100%);
@@ -209,6 +275,7 @@ transform: translateX(100%);
 100% {
 transform: translateX(-100%);
   }
+<<<<<<< HEAD
 }
 @keyframes fade {
   0% {
@@ -217,9 +284,15 @@ transform: translateX(-100%);
   100% {
     opacity: 1;
   }
+=======
+>>>>>>> refs/remotes/origin/Tanjeed
 }
 
-
+button.toggleThemeButton {
+  position: sticky;
+  border-radius: 10%;
+  /* style */
+}
 
 
 
