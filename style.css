@@ -48,10 +48,11 @@ body {
   color: black;
   font-family: "Brother-1816", sans-serif;
   font-weight: 400;
-  font-size: 17px;
+  font-size: 1.6em;
   line-height: 1;
 }
 #title {
+  letter-spacing: 0.1rem;
   font-family: "brother-1816", "barlow-condensed", sans-serif;
   font-size: 3em;
   text-align: left;
@@ -120,7 +121,6 @@ body {
   text-align: left;
   margin-left: 10%;
   border-bottom: solid var(--kellyGreen) 2px;
-
 }
 #sidebar p {
   color: #1d7519;
@@ -139,13 +139,15 @@ body {
   font-size: 1.1em;
 }
 #content h1, #content h2, #content h3, #content h4, #content h5, #content h6 {
-  color: #056600;
+  /*color: CHOOSE COLOR */
   font-size: 2.5rem;
 }
 .slideshow-container {
   max-width: 500px;
   position: relative;
   margin: auto;
+  margin-left: 30%;
+  margin-bottom: 5%;
   border: outset #BCE4E8 5px;
 }
 .slides {
@@ -195,6 +197,14 @@ body {
 .fade {
   animation: fade 1.5s;
 }
+
+#contentText {
+  text-align: left;
+  margin: 2%;
+  margin-bottom: 10%;
+}
+#contentText ul {
+  list-style: url("assets/html.png"); 
 @keyframes fade {
   0% {
     opacity: 0.4;
@@ -203,17 +213,17 @@ body {
     opacity: 1;
   }
 }
-#contentText {
-  text-align: left;
-  border: solid red 5px;
-  margin: 2%;
-}
 #contentText h3 {
   color: #46545D;
   margin-left: 3%;
+  margin-right: 3%;
   line-height: 2;
-  border-bottom: dashed blue 3px;
+  border-bottom: dashed #303A40 3px;
   font-size: 1.3em;
+}
+#contentText p {
+  color: #7F8B99;
+  margin-left: 5%;
 }
 @keyframes marquee {
   0% {
@@ -222,14 +232,20 @@ transform: translateX(100%);
 100% {
 transform: translateX(-100%);
   }
+
+}
+@keyframes fade {
+  0% {
+    opacity: 0.4;
+  }
+  100% {
+    opacity: 1;
+  }
+
 }
 
 button.toggleThemeButton {
   position: sticky;
   border-radius: 10%;
   /* style */
-}
-
-
-
-
+]
