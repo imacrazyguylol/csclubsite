@@ -1,0 +1,141 @@
+:root {
+  --underTitleText: white;
+  --underTitleBackground: #056600;
+  --titleText: #056600;
+  --borderColor: #056600;
+  --topNBottomBackgroundColor: #F5F5F5;
+  --underTitleHover: #F5F5F5;
+}
+html, body {
+  height: 100%;
+  width: 100%;
+}
+body {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  font-size: 13px;
+  line-height: 1.231;
+  min-width: 1200px;
+  overflow-x: hidden;
+}
+.marquee {
+  animation: marquee 30s linear infinite;
+}
+#wrapper {
+  position: relative;
+  margin: 0 auto;
+  display: flex;
+  flex-flow: column wrap;
+  font-family: "Barlow", sans-serif;
+}
+#top {
+  height: 7%;
+  background-color: #F5F5F5;
+  border-bottom: solid;
+  border-bottom-color: #056600;
+  border-bottom-width: 2px;
+  color: #067A00;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 1;
+}
+#footer {
+  background-color: #F5F5F5;
+  border-top: solid;
+  border-top-color: #056600;
+  color: black;
+  font-family: "Barlow", sans-serif;
+  font-weight: 400;
+  font-size: 1.6em;
+  line-height: 1;
+}
+#title {
+  letter-spacing: 0.1rem;
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 3em;
+  text-align: left;
+  padding-left: 20%;
+  line-height: 1;
+  color: #056600;
+  font-weight: normal;
+  display: flex;
+  flex-flow: row no-wrap;
+}
+#title a {
+  text-decoration: none;
+}
+#title img {
+  margin: 15%;
+}
+#title a:link {
+  color: inherit;
+}
+#title a:visited {
+  color: inherit;
+}
+#underTitle {
+  width: 100%;
+  background-color: #056600;
+  color: white;
+  font-size: 1.5em;
+  display: flex;
+  justify-content: center;
+}
+#underTitle a {
+  text-decoration: none;
+  color: inherit;
+  padding-left: 3%;
+  padding-right: 3%;
+  transition: 300ms;
+}
+#underTitle a:link a:visited {
+  color: inherit;
+}
+#underTitle a:hover {
+  color: black;
+  background-color: #F5F5F5;
+}
+#body {
+  letter-spacing: .2rem;
+  font-family: "Barlow", sans-serif;
+  color: #056600;
+  font-size: 1.5em;
+  background-color: white;
+}
+#about {
+  display: flex;
+  flex-flow: row no-wrap;
+  letter-spacing: normal;
+  text-align: left;
+}
+#about h2{
+  font-size: 1.5em;
+}
+#about p {
+  color: black;
+}
+#left-about {
+  width: 50%;
+  padding: 2%;
+  padding-top: 0%;
+}
+#right-about {
+  width: 50%;
+  padding: 2%;
+  padding-top: 0%;
+}
+@keyframes marquee {
+  0% {
+transform: translateX(100%);
+  }
+100% {
+transform: translateX(-100%);
+  }  
+}
+
+
+
+
+
+
