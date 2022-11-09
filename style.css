@@ -56,6 +56,8 @@ body {
   font-weight: 400;
   font-size: 1.6em;
   line-height: 1;
+  margin-top: 5%;
+  margin-bottom: 5%;
 }
 
 #title {
@@ -112,17 +114,6 @@ body {
 #navBar a:hover {
   color: black;
   background-color: var(--offWhite);
-}
-
-#body {
-  display: flex;
-  flex-direction: row;
-  font-size: 1.3em;
-  overflow: hidden;
-}
-
-#body hr {
-  border-top: 2px solid var(--kellyGreen);
 }
 
 #sidebar {
@@ -183,7 +174,7 @@ h6 {
   font-size: 2.5rem;
 }
 
-.slideshow-container {
+#slideshowContainer {
   max-width: 500px;
   position: relative;
   margin: auto;
@@ -193,7 +184,7 @@ h6 {
 }
 
 .slides {
-  display: none;
+  display: block;
 }
 
 .prev,

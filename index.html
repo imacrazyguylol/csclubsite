@@ -28,7 +28,7 @@ font-style: normal; -->
     <link rel="stylesheet" type="text/css" href="xbbcode.css">
 </head>
 
-<body>
+<body id="main">
 
     <div id="wrapper">
         <div id="top">
@@ -73,46 +73,19 @@ font-style: normal; -->
             </a>
         </div>
 
-        <div class="slideshow-container">
+        <div id="content">
 
-            <div class="slides fade">
-                <div class="slidePosition">1 / 3</div>
-                <img src="./assets/tempImg.jpg" style="width: 100%">
-                <div class="caption">nice pic</div>
-            </div>
-
-            <div class="slides fade">
-                <div class="slidePosition">2 / 3</div>
-                <img src="./assets/coding.jpeg" style="width: 100%">
-                <div class="caption">nicer pic</div>
-            </div>
-
-            <div class="slides fade">
-                <div class="slidePosition">3 / 3</div>
-                <img src="./assets/coding2.jpeg" style="width: 100%">
-                <div class="caption">the nicest pic</div>
-            </div>
-
-            <a class="prev" onclick="moveSlide(-1)">&#10094;</a>
-            <a class="next" onclick="moveSlide(1)">&#10095;</a>
+            <div id="slideshowContainer"></div>
         </div>
-
-    </div>
     </div>
 
     <div id="footer">
-        <p>Come find us at C211 at Arundel High School! <br>Contact us at [Phone Number or other contact information].
-        </p>
-    </div>
+        <p>Come find us at C211 at Arundel High School! <br>Contact us at [Phone Number or other contact information].</p>
     </div>
 
     <!-- SCRIPTS -->
-    <script type="text/babel" src="script.js"></script>
-    <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
-    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
-    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
-    <script src="xbbcode.js"></script>
-    <script src="./src/toggleTheme.jsx"></script>
+    <script src="./src/toggleTheme.js"></script>
+    <script src="./src/slideshow.js"></script>
 </body>
 
 </html>
