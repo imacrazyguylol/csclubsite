@@ -1,3 +1,4 @@
 .replit
 replit.nix
 package.json
+node_modules

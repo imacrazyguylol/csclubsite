@@ -1,4 +1,4 @@
-:root{
+:root {
   --kellyGreen: #056600;
   --darkModeGray: #303A40;
   --blueGray: #46545D;
@@ -7,10 +7,12 @@
   --mainFont: input-mono, monospace;
 }
 
-html, body {
+html,
+body {
   height: 100%;
   width: 100%;
 }
+
 body {
   text-align: center;
   margin: 0;
@@ -20,16 +22,19 @@ body {
   min-width: 1200px;
   overflow-x: hidden;
 }
+
 .marquee {
   animation: marquee 30s linear infinite;
 }
+
 #wrapper {
   position: relative;
   margin: 0 auto;
-  display: flex;
-  flex-flow: column wrap;
-  font-family: "Barlow", sans-serif;
+  /*display: flex;
+  flex-flow: column wrap;*/
+  font-family: var(--mainFont);
 }
+
 #top {
   height: 7%;
   background-color: var(--offWhite);
@@ -41,6 +46,7 @@ body {
   font-size: 17px;
   line-height: 1;
 }
+
 #footer {
   background-color: var(--offWhite);
   border-top: solid;
@@ -50,7 +56,10 @@ body {
   font-weight: 400;
   font-size: 1.6em;
   line-height: 1;
+  margin-top: 5%;
+  margin-bottom: 5%;
 }
+
 #title {
   letter-spacing: 0.1rem;
   font-family: "brother-1816", "barlow-condensed", sans-serif;
@@ -62,19 +71,23 @@ body {
   flex-flow: row no-wrap;
   justify-content: center;
 }
+
 #title a {
   text-decoration: none;
 }
+
 #title img {
   margin: 15%;
 }
+
 #title a:link {
   color: inherit;
 }
+
 #title a:visited {
   color: inherit;
 }
-#underTitle {
+#navBar {
   width: 100%;
   background-color: var(--kellyGreen);
   color: white;
@@ -84,44 +97,45 @@ body {
   font-family: var(--mainFont);
   font-weight: 400;
 }
-#underTitle a {
+#navBar a {
   text-decoration: none;
   color: inherit;
   padding-left: 3%;
   padding-right: 3%;
   transition: 300ms;
 }
-#underTitle a:link a:visited {
+
+#navBar a:link a:visited {
   color: inherit;
 }
-#underTitle a:hover {
+#navBar a:hover {
   color: black;
   background-color: var(--offWhite);
 }
-#body {
-  display: flex;
-  flex-direction: row;
-  font-size: 1.3em;
-  overflow: hidden;
-}
-#body hr {
-  border-top: 2px solid var(--kellyGreen);
-}
+
 #sidebar {
   background-color: rgba(200, 239, 198, 0.5);
   width: 35%;
 }
+
 #sidebar img {
   width: 100px;
   height: auto;
 }
-#sidebar h1,#sidebar h2,#sidebar h3,#sidebar h4,#sidebar h5,#sidebar h6 {
+
+#sidebar h1,
+#sidebar h2,
+#sidebar h3,
+#sidebar h4,
+#sidebar h5,
+#sidebar h6 {
   font-size: 1.7em;
   color: black;
   text-align: left;
   margin-left: 10%;
   border-bottom: solid var(--kellyGreen) 2px;
 }
+
 #sidebar p {
   color: #1d7519;
   text-align: left;
@@ -129,20 +143,35 @@ body {
   margin-right: 2%;
   font-size: 1.1em;
 }
-#sidebar p, img, h2, h3, h4, h5, h6 {
+
+#sidebar p,
+img,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin-top: 3%;
 }
+
 #content {
   padding-top: 3%;
   height: auto;
   width: 65%;
   font-size: 1.1em;
 }
-#content h1, #content h2, #content h3, #content h4, #content h5, #content h6 {
-  /*color: CHOOSE COLOR */
+
+#content h1,
+#content h2,
+#content h3,
+#content h4,
+#content h5,
+#content h6 {
+  color: var(--darkModeGray);
   font-size: 2.5rem;
 }
-.slideshow-container {
+
+#slideshowContainer {
   max-width: 500px;
   position: relative;
   margin: auto;
@@ -150,10 +179,13 @@ body {
   margin-bottom: 5%;
   border: outset #BCE4E8 5px;
 }
+
 .slides {
-  display: none;
+  display: block;
 }
-.prev, .next {
+
+.prev,
+.next {
   cursor: pointer;
   position: absolute;
   top: 50%;
@@ -167,17 +199,22 @@ body {
   border-radius: 0 3px 3px 0;
   user-select: none;
 }
+
 .next {
   right: 0;
   border-radius: 3px 0 0 3px;
 }
+
 .prev {
   left: 0;
   border-radius: 0 3px 3px 0;
 }
-.prev:hover, .next:hover {
-  background-color: rgba(245,245,245,0.8);
+
+.prev:hover,
+.next:hover {
+  background-color: rgba(245, 245, 245, 0.8);
 }
+
 .caption {
   color: #303A40;
   font-size: 15px;
@@ -187,6 +224,7 @@ body {
   width: 100%;
   text-align: center;
 }
+
 .slidePosition {
   color: black;
   font-size: 12px;
@@ -194,6 +232,7 @@ body {
   position: absolute;
   top: 0;
 }
+
 .fade {
   animation: fade 1.5s;
 }
@@ -207,10 +246,12 @@ body {
   0% {
     opacity: 0.4;
   }
+
   100% {
     opacity: 1;
   }
 }
+
 #contentText h3 {
   color: #46545D;
   margin-left: 3%;
@@ -219,23 +260,28 @@ body {
   border-bottom: dashed #303A40 3px;
   font-size: 1.3em;
 }
+
 #contentText p {
   color: #7F8B99;
   margin-left: 5%;
 }
+
 @keyframes marquee {
   0% {
-transform: translateX(100%);
-}
-100% {
-transform: translateX(-100%);
+    transform: translateX(100%);
+  }
+
+  100% {
+    transform: translateX(-100%);
   }
 
 }
+
 @keyframes fade {
   0% {
     opacity: 0.4;
   }
+
   100% {
     opacity: 1;
   }
