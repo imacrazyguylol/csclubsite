@@ -87,7 +87,6 @@ body {
 #title a:visited {
   color: inherit;
 }
-
 #navBar {
   width: 100%;
   background-color: var(--kellyGreen);
@@ -98,7 +97,6 @@ body {
   font-family: var(--mainFont);
   font-weight: 400;
 }
-
 #navBar a {
   text-decoration: none;
   color: inherit;
@@ -110,7 +108,6 @@ body {
 #navBar a:link a:visited {
   color: inherit;
 }
-
 #navBar a:hover {
   color: black;
   background-color: var(--offWhite);
@@ -245,11 +242,6 @@ h6 {
   margin: 2%;
   margin-bottom: 10%;
 }
-
-#contentText ul {
-  list-style: url("assets/html.png");
-}
-
 @keyframes fade {
   0% {
     opacity: 0.4;

@@ -51,16 +51,16 @@ body {
   line-height: 1;
 }
 #title {
-  letter-spacing: 0.1rem;
   font-family: "Barlow Condensed", sans-serif;
   font-size: 3em;
   text-align: left;
-  padding-left: 20%;
   line-height: 1;
   color: #056600;
   font-weight: normal;
   display: flex;
   flex-flow: row no-wrap;
+  justify-content: center;
+  letter-spacing: 0.2em;
 }
 #title a {
   text-decoration: none;
@@ -74,7 +74,7 @@ body {
 #title a:visited {
   color: inherit;
 }
-#underTitle {
+#navBar {
   width: 100%;
   background-color: #056600;
   color: white;
@@ -82,17 +82,17 @@ body {
   display: flex;
   justify-content: center;
 }
-#underTitle a {
+#navBar a {
   text-decoration: none;
   color: inherit;
   padding-left: 3%;
   padding-right: 3%;
   transition: 300ms;
 }
-#underTitle a:link a:visited {
+#navBar a:link a:visited {
   color: inherit;
 }
-#underTitle a:hover {
+#navBar a:hover {
   color: black;
   background-color: #F5F5F5;
 }
