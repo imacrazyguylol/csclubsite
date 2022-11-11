@@ -10,11 +10,10 @@
   --blueGray: #46545D;
   --offWhite: #F5F5F5;
 
-  --mainFont: input-mono, monospace;
+  --mainFont: "Barlow", sans-serif;
 }
 
-html,
-body {
+html, body {
   height: 100%;
   width: 100%;
 }
@@ -28,7 +27,17 @@ body {
   min-width: 1200px;
   overflow-x: hidden;
 }
-
+#top {
+  height: 7%;
+  background-color: #F5F5F5;
+  border-bottom: solid;
+  border-bottom-color: #056600;
+  border-bottom-width: 2px;
+  color: #067A00;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 1;
+}
 .marquee {
   animation: marquee 30s linear infinite;
 }
@@ -53,14 +62,16 @@ body {
 }
 
 #title {
-  font-family: "brother-1816", "barlow-condensed", sans-serif;
+  font-family: 'Barlow Condensed', sans-serif;
   font-size: 3em;
   text-align: left;
+  line-height: 1;
   color: var(--kellyGreen);
   font-weight: normal;
   display: flex;
   flex-flow: row no-wrap;
   justify-content: center;
+  letter-spacing: 0.2em;
 }
 
 #title a {
@@ -95,6 +106,7 @@ body {
   color: inherit;
   padding-left: 3%;
   padding-right: 3%;
+  transition: 300ms;
 }
 
 #navBar a:link a:visited {
@@ -105,33 +117,6 @@ body {
   color: black;
   background-color: var(--offWhite);
 }
-
-#underTitle {
-  width: 100%;
-  background-color: #056600;
-  color: white;
-  font-size: 1.5em;
-  display: flex;
-  justify-content: center;
-}
-
-#underTitle a {
-  text-decoration: none;
-  color: inherit;
-  padding-left: 3%;
-  padding-right: 3%;
-  transition: 300ms;
-}
-
-#underTitle a:link a:visited {
-  color: inherit;
-}
-
-#underTitle a:hover {
-  color: black;
-  background-color: var(--offWhite);
-}
-
 #body {
   font-size: 1.3em;
   background-color: white;
@@ -177,6 +162,7 @@ body {
 
 .portfolio p {
   font-size: 2.8vh;
+  font-family: var(--mainFont);
 }
 
 @keyframes marquee {
