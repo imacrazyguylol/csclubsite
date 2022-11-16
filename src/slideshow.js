@@ -6,8 +6,7 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-// const { React, ReactDOM } = require('react');
-// const root = ReactDOM.createRoot(document.getElementById("slideshowContainer"));
+var root = ReactDOM.createRoot(document.getElementById("slideshowContainer"));
 
 var Slideshow = function (_React$Component) {
     _inherits(Slideshow, _React$Component);
@@ -30,7 +29,7 @@ var Slideshow = function (_React$Component) {
                 caption: "this is slide 2."
             },
             3: {
-                src: './assets/templimg.jpg',
+                src: './assets/tempImg.jpg',
                 caption: "this is slide 3."
             }
         };
@@ -38,9 +37,9 @@ var Slideshow = function (_React$Component) {
     }
 
     _createClass(Slideshow, [{
-        key: 'slideTransitionPrev',
+        key: "slideTransitionPrev",
         value: function slideTransitionPrev() {
-            var ok = Object.keys(this.slides);
+            var ok = Object.keys(this.slides).length;
 
             if (this.state.slide === 1) {
                 this.setState({ slide: ok });
@@ -49,9 +48,9 @@ var Slideshow = function (_React$Component) {
             }
         }
     }, {
-        key: 'slideTransitionNext',
+        key: "slideTransitionNext",
         value: function slideTransitionNext() {
-            var ok = Object.keys(this.slides);
+            var ok = Object.keys(this.slides).length;
 
             if (this.state.slide === ok) {
                 this.setState({ slide: 1 });
@@ -60,38 +59,38 @@ var Slideshow = function (_React$Component) {
             }
         }
     }, {
-        key: 'render',
+        key: "render",
         value: function render() {
             var _this2 = this;
 
             return React.createElement(
-                'div',
-                { 'class': 'slides fade' },
+                "div",
+                { className: "slides fade" },
                 React.createElement(
-                    'span',
-                    { 'class': 'slidePosition' },
+                    "span",
+                    { className: "slidePosition" },
                     this.state.slide,
-                    ' / ',
-                    Object.keys(this.slides)
+                    " / ",
+                    Object.keys(this.slides).length
                 ),
-                React.createElement('img', { style: 'width: 100%', src: this.slides[this.state.slide].src }),
+                React.createElement("img", { style: { width: '100%' }, src: this.slides[this.state.slide].src }),
                 React.createElement(
-                    'button',
-                    { 'class': 'prev', onClick: function onClick() {
+                    "button",
+                    { className: "prev", onClick: function onClick() {
                             return _this2.slideTransitionPrev();
                         } },
-                    '\u276E'
+                    "\u276E"
                 ),
                 React.createElement(
-                    'button',
-                    { 'class': 'next', onClick: function onClick() {
+                    "button",
+                    { className: "next", onClick: function onClick() {
                             return _this2.slideTransitionNext();
                         } },
-                    '\u276F'
+                    "\u276F"
                 ),
                 React.createElement(
-                    'span',
-                    { 'class': 'caption' },
+                    "span",
+                    { className: "caption" },
                     this.slides[this.state.slide].caption
                 )
             );
