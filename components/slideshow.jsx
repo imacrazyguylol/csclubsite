@@ -1,8 +1,5 @@
-'use strict';
-
-const { React, ReactDOM } = require('reactjs');
-const e = React.createElement;
-const root = ReactDOM.createRoot(document.getElementById("slideshowContainer"));
+// const { React, ReactDOM } = require('react');
+// const root = ReactDOM.createRoot(document.getElementById("slideshowContainer"));
 
 class Slideshow extends React.Component {
     constructor(props) {
@@ -30,9 +27,9 @@ class Slideshow extends React.Component {
         let ok = Object.keys(this.slides);
 
         if (this.state.slide === 1) {
-            this.setState({slide: ok});
+            this.setState({ slide: ok });
         } else {
-            this.setState({slide: this.state.slide - 1});
+            this.setState({ slide: this.state.slide - 1 });
         }
     }
 
@@ -40,9 +37,9 @@ class Slideshow extends React.Component {
         let ok = Object.keys(this.slides);
 
         if (this.state.slide === ok) {
-            this.setState({slide: 1});
+            this.setState({ slide: 1 });
         } else {
-            this.setState({slide: this.state.slide + 1});
+            this.setState({ slide: this.state.slide + 1 });
         }
     }
 
@@ -61,4 +58,4 @@ class Slideshow extends React.Component {
     }
 }
 
-root.render(e(Slideshow));
+root.render(<Slideshow />);
