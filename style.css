@@ -1,5 +1,5 @@
 :root {
-  --kellyGreen: #056600;
+  --kellyGreen: #0a7a04;
   --darkModeGray: #303A40;
   --blueGray: #46545D;
   --offWhite: #F5F5F5;
@@ -65,6 +65,7 @@ body {
   display: flex;
     flex-flow: row no-wrap;
     justify-content: center;
+    align-items: center;
 }
 
 #title a {
@@ -73,6 +74,8 @@ body {
 
 #title img {
   margin: 15%;
+  height: 120px;
+  width: auto;
 }
 
 #title a:link {
