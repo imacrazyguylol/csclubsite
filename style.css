@@ -86,13 +86,13 @@ body {
   width: 100%;
   background-color: inherit;
   color: var(--offWhite);
-  font-size: 1.5em;
+  font-size: 1.7em;
   display: flex;
     justify-content: center;
   font-family: var(--mainFont);
   font-weight: 400;
-  margin-bottom: 10px;
-  box-shadow: 2px 4px 4px rgba(10,10,20, 0.25);
+  margin-bottom: 1.5em;
+  box-shadow: 2px 6px 6px rgba(10,10,20, 0.25);
 }
 #navBar a{
   text-decoration: none;
