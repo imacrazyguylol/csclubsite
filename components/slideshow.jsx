@@ -1,7 +1,3 @@
-'use strict';
-
-const { React, ReactDOM } = require('reactjs');
-const e = React.createElement;
 const root = ReactDOM.createRoot(document.getElementById("slideshowContainer"));
 
 class Slideshow extends React.Component {
@@ -20,45 +16,46 @@ class Slideshow extends React.Component {
                 caption: "this is slide 2."
             },
             3: {
-                src: './assets/templimg.jpg',
+                src: './assets/tempImg.jpg',
                 caption: "this is slide 3."
             }
         }
     }
 
     slideTransitionPrev() {
-        let ok = Object.keys(this.slides);
+        let ok = Object.keys(this.slides).length;
 
         if (this.state.slide === 1) {
-            this.setState({slide: ok});
+            this.setState({ slide: ok });
         } else {
-            this.setState({slide: this.state.slide - 1});
+            this.setState({ slide: this.state.slide - 1 });
         }
     }
 
     slideTransitionNext() {
-        let ok = Object.keys(this.slides);
+        let ok = Object.keys(this.slides).length;
 
         if (this.state.slide === ok) {
-            this.setState({slide: 1});
+            this.setState({ slide: 1 });
         } else {
-            this.setState({slide: this.state.slide + 1});
+            this.setState({ slide: this.state.slide + 1 });
         }
     }
 
     render() {
+        
         return (
-            <div class="slides fade">
-                <span class="slidePosition">{this.state.slide} / {Object.keys(this.slides)}</span>
-                <img style="width: 100%" src={this.slides[this.state.slide].src} />
+            <div className="slides fade">
+                <span className="slidePosition">{this.state.slide} / {Object.keys(this.slides).length}</span>
+                <img className="slide" style={{width: '100%'}} src={this.slides[this.state.slide].src} />
 
-                <button class="prev" onClick={() => this.slideTransitionPrev()}>&#10094;</button>
-                <button class="next" onClick={() => this.slideTransitionNext()}>&#10095;</button>
+                <button className="prev" onClick={() => this.slideTransitionPrev()}>&#10094;</button>
+                <button className="next" onClick={() => this.slideTransitionNext()}>&#10095;</button>
 
-                <span class="caption">{this.slides[this.state.slide].caption}</span>
+                <span className="caption">{this.slides[this.state.slide].caption}</span>
             </div>
         )
     }
 }
 
-root.render(e(Slideshow));
+root.render(<Slideshow />);
