@@ -30,7 +30,6 @@ class Slideshow extends React.Component {
         } else {
             this.setState({ slide: this.state.slide - 1 });
         }
-        this.resizeBottom();
     }
 
     slideTransitionNext() {
@@ -41,14 +40,6 @@ class Slideshow extends React.Component {
         } else {
             this.setState({ slide: this.state.slide + 1 });
         }
-        this.resizeBottom();
-    }
-
-    resizeBottom() {
-        let image = document.querySelector("img.slide");
-        let caption = document.querySelector(".caption");
-
-        caption.style.bottom = (400 - image.height) + 2.5 + "px"; // fix
     }
 
     render() {
