@@ -30,6 +30,7 @@ class Slideshow extends React.Component {
         } else {
             this.setState({ slide: this.state.slide - 1 });
         }
+        this.resizeBottom();
     }
 
     slideTransitionNext() {
@@ -40,13 +41,22 @@ class Slideshow extends React.Component {
         } else {
             this.setState({ slide: this.state.slide + 1 });
         }
+        this.resizeBottom();
+    }
+
+    resizeBottom() {
+        let image = document.querySelector("img.slide");
+        let caption = document.querySelector(".caption");
+
+        caption.style.bottom = (400 - image.height) + 2.5 + "px"; // fix
     }
 
     render() {
+        
         return (
             <div className="slides fade">
                 <span className="slidePosition">{this.state.slide} / {Object.keys(this.slides).length}</span>
-                <img style={{width: '100%'}} src={this.slides[this.state.slide].src} />
+                <img className="slide" style={{width: '100%'}} src={this.slides[this.state.slide].src} />
 
                 <button className="prev" onClick={() => this.slideTransitionPrev()}>&#10094;</button>
                 <button className="next" onClick={() => this.slideTransitionNext()}>&#10095;</button>

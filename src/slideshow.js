@@ -46,6 +46,7 @@ var Slideshow = function (_React$Component) {
             } else {
                 this.setState({ slide: this.state.slide - 1 });
             }
+            this.resizeBottom();
         }
     }, {
         key: "slideTransitionNext",
@@ -57,6 +58,15 @@ var Slideshow = function (_React$Component) {
             } else {
                 this.setState({ slide: this.state.slide + 1 });
             }
+            this.resizeBottom();
+        }
+    }, {
+        key: "resizeBottom",
+        value: function resizeBottom() {
+            var image = document.querySelector("img.slide");
+            var caption = document.querySelector(".caption");
+
+            caption.style.bottom = 400 - image.height + 2.5 + "px";
         }
     }, {
         key: "render",
@@ -73,7 +83,7 @@ var Slideshow = function (_React$Component) {
                     " / ",
                     Object.keys(this.slides).length
                 ),
-                React.createElement("img", { style: { width: '100%' }, src: this.slides[this.state.slide].src }),
+                React.createElement("img", { className: "slide", style: { width: '100%' }, src: this.slides[this.state.slide].src }),
                 React.createElement(
                     "button",
                     { className: "prev", onClick: function onClick() {
