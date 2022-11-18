@@ -47,8 +47,8 @@ body {
 #footer {
   background-color: inherit;
   border-top: solid;
-  border-top-color: var(--blueGray);
-  color: black;
+  border-top-color: var(--kellyGreen);
+  color: var(--kellyGreen);
   font-family: "Brother-1816", sans-serif;
   font-weight: 400;
   font-size: 1.6em;
@@ -63,7 +63,7 @@ body {
   color: var(--offWhite);
   font-weight: normal;
   display: flex;
-  flex-flow: row no-wrap;
+    flex-flow: row no-wrap;
     justify-content: center;
 }
 
