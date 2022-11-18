@@ -66,7 +66,7 @@ var Slideshow = function (_React$Component) {
             var image = document.querySelector("img.slide");
             var caption = document.querySelector(".caption");
 
-            caption.style.bottom = 400 - image.height + 2.5 + "px";
+            caption.style.bottom = 400 - image.height + 2.5 + "px"; // fix
         }
     }, {
         key: "render",

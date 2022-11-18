@@ -91,6 +91,8 @@ body {
     justify-content: center;
   font-family: var(--mainFont);
   font-weight: 400;
+  margin-bottom: 10px;
+  box-shadow: 2px 4px 4px rgba(10,10,20, 0.25);
 }
 #navBar a{
   text-decoration: none;
@@ -217,8 +219,6 @@ img.slide {
   line-height: 2;
   border-bottom: dashed var(--offWhite) 3px;
   font-size: 1.3em;
-  
-
 }
 
 #contentText p {
