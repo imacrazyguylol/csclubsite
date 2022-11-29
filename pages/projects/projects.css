@@ -3,6 +3,7 @@
     --darkModeGray: #303A40;
     --blueGray: #46545D;
     --offWhite: #F5F5F5;
+    --lightGray: rgb(192, 192, 200);
 
     --mainFont: input-mono, monospace;
 }
@@ -34,8 +35,9 @@ body {
     color: var(--offWhite);
     font-weight: normal;
     display: flex;
-    flex-flow: row no-wrap;
-    justify-content: center;
+        flex-flow: row no-wrap;
+        justify-content: center;
+        align-items: center;
 }
 
 #title a {
