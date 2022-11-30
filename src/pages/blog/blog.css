@@ -1,16 +1,19 @@
 :root {
-  --kellyGreen: #0a7a04;
-  --textGreen: #53A14F;
-  --darkModeGray: #303A40;
-  --blueGray: #46545D;
-  --offWhite: #F5F5F5;
-
-  --mainFont: input-mono, monospace;
+  --underTitleText: white;
+  --underTitleBackground: #056600;
+  --titleText: #056600;
+  --borderColor: #056600;
+  --topNBottomBackgroundColor: #F5F5F5;
+  --underTitleHover: #F5F5F5;
 }
 
-html {
+html,
+body {
+  height: 100%;
+  width: 100%;
   scroll-behavior: smooth;
 }
+
 body {
   text-align: center;
   margin: 0;
@@ -19,59 +22,54 @@ body {
   line-height: 1.231;
   min-width: 1200px;
   overflow-x: hidden;
-  height: 100%;
-  width: 100%;
-
-  background-color: var(--darkModeGray) ;
 }
 
 .marquee {
-  animation: marquee 45s linear infinite;
+  animation: marquee 30s linear infinite;
 }
 
 #wrapper {
+  position: relative;
   margin: 0 auto;
-  /*display: flex;
-  flex-flow: column wrap;*/
-  font-family: var(--mainFont);
-  color: var(--offWhite);
+  display: flex;
+  flex-flow: column wrap;
+  font-family: "Barlow", sans-serif;
 }
 
 #top {
   height: 7%;
+  background-color: #F5F5F5;
   border-bottom: solid;
-  background-color: inherit;
-  border-bottom-color: var(--kellyGreen);
+  border-bottom-color: #056600;
   border-bottom-width: 2px;
-  color: var(--textGreen);
+  color: #067A00;
   font-weight: 400;
   font-size: 17px;
   line-height: 1;
 }
 
 #footer {
-  background-color: inherit;
+  background-color: #F5F5F5;
   border-top: solid;
-  border-top-color: var(--kellyGreen);
-  color: var(--textGreen);
-  font-family: "Brother-1816", sans-serif;
+  border-top-color: #056600;
+  color: black;
+  font-family: "Barlow", sans-serif;
   font-weight: 400;
   font-size: 1.6em;
   line-height: 1;
-  
 }
 
 #title {
-  letter-spacing: 0.1rem;
-  font-family: "brother-1816", "barlow-condensed", sans-serif;
+  font-family: "Barlow Condensed", sans-serif;
   font-size: 3em;
   text-align: left;
-  color: var(--offWhite);
+  line-height: 1;
+  color: #056600;
   font-weight: normal;
   display: flex;
-    flex-flow: row no-wrap;
-    justify-content: center;
-    align-items: center;
+  flex-flow: row no-wrap;
+  justify-content: center;
+  letter-spacing: 0.2em;
 }
 
 #title a {
@@ -80,9 +78,6 @@ body {
 
 #title img {
   margin: 15%;
-  margin-bottom: 0%;
-  height: 120px;
-  width: auto;
 }
 
 #title a:link {
@@ -92,19 +87,17 @@ body {
 #title a:visited {
   color: inherit;
 }
+
 #navBar {
   width: 100%;
-  background-color: inherit;
-  color: var(--offWhite);
-  font-size: 1.7em;
+  background-color: #056600;
+  color: white;
+  font-size: 1.5em;
   display: flex;
-    justify-content: center;
-  font-family: var(--mainFont);
-  font-weight: 400;
-  margin-bottom: 1.5em;
-  box-shadow: 2px 6px 6px rgba(10,10,20, 0.25);
+  justify-content: center;
 }
-#navBar a{
+
+#navBar a {
   text-decoration: none;
   color: inherit;
   padding-left: 3%;
@@ -115,9 +108,10 @@ body {
 #navBar a:link a:visited {
   color: inherit;
 }
+
 #navBar a:hover {
-  color: var(--blueGray);
-  background-color: var(--offWhite);
+  color: black;
+  background-color: #F5F5F5;
 }
 
 #body {
@@ -125,18 +119,16 @@ body {
   flex-direction: row;
   font-size: 1.3em;
   overflow: hidden;
-  background-image: linear-gradient(to right, var(--blueGray), var(--darkModeGray)), linear-gradient(to left, var(--blueGray), var(--darkModeGray));
-  background-repeat: no-repeat;
-  background-size: 20%;
-  background-position: left, right;
+  background-color: rgba(149, 163, 179, 0.2);
 }
+
 #blog {
   width: 100%;
   margin-left: 20%;
   margin-right: 20%;
   text-align: left;
   font-size: 1.2em;
-  background-color: var(--darkModeGray);
+  background-color: #F5F5F5;
 }
 
 #blogTitle {
@@ -148,8 +140,8 @@ body {
 }
 
 #tableOfContents {
-  background: var(--blueGray) none repeat scroll;
-  border: 1px solid var(--offWhite);
+  background: #f9f9f9 none repeat scroll;
+  border: 1px solid #aaa;
   display: table;
   font-size: 1.6em;
   margin-bottom: 1em;
