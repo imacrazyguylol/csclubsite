@@ -4,7 +4,8 @@
   --darkModeGray: #303A40;
   --blueGray: #46545D;
   --offWhite: #F5F5F5;
-
+  --lightGray: rgb(192, 192, 200);
+  
   --mainFont: input-mono, monospace;
 }
 
@@ -28,7 +29,7 @@ body {
 @media (min-height: 1200px) {
   body {
   text-align: center;
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   font-size: 17px;
   line-height: 1.231;
@@ -36,8 +37,7 @@ body {
   overflow-x: hidden;
   height: 100%;
   width: 100%;
-
-  background-color: var(--darkModeGray) ;
+  background-color: var(--darkModeGray);
 }
 }
 
@@ -74,7 +74,6 @@ body {
   font-weight: 400;
   font-size: 1.6em;
   line-height: 1;
-  
 }
 
 #title {
@@ -94,9 +93,9 @@ body {
   text-decoration: none;
 }
 
+
 #title img {
   margin: 15%;
-  margin-bottom: 0%;
   height: 120px;
   width: auto;
 }
@@ -117,17 +116,20 @@ body {
 #title a:visited {
   color: inherit;
 }
+
 #navBar {
   width: 100%;
   background-color: inherit;
   color: var(--offWhite);
-  font-size: 1.7em;
+  font-size: 1.5em;
   display: flex;
-    justify-content: center;
+  justify-content: center;
   font-family: var(--mainFont);
   font-weight: 400;
-  margin-bottom: 1.5em;
-  box-shadow: 2px 6px 6px rgba(10,10,20, 0.25);
+  box-shadow: 0px 0px 8px 6px rgba(10, 10, 20, 0.25);
+
+  z-index: 2;
+  position: sticky;
 }
 #navBar a{
   text-decoration: none;

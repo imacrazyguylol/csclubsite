@@ -1,15 +1,16 @@
 :root {
-  --kellyGreen: #0a7a04;
+  --kellyGreen: #056600;
   --darkModeGray: #303A40;
-  --textGreen: #53A14F;
   --blueGray: #46545D;
   --offWhite: #F5F5F5;
+  --lightGray: rgb(192, 192, 200);
 
   --mainFont: input-mono, monospace;
 }
+
 body {
   text-align: center;
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   font-size: 13px;
   line-height: 1.231;
@@ -17,7 +18,6 @@ body {
   overflow-x: hidden;
   height: 100%;
   width: 100%;
-
   background-color: var(--darkModeGray);
 }
 
@@ -65,7 +65,14 @@ body {
   font-weight: 400;
   font-size: 1.6em;
   line-height: 1;
+  font-family: var(--mainFont);
+  background-color: var(--darkModeGray);
 }
+
+#head {
+  background-color: inherit;
+}
+
 #title {
   letter-spacing: 0.1rem;
   font-family: "brother-1816", "barlow-condensed", sans-serif;
@@ -74,13 +81,15 @@ body {
   color: var(--offWhite);
   font-weight: normal;
   display: flex;
-  flex-flow: row no-wrap;
-  justify-content: center;
-  align-items: center;
+    flex-flow: row no-wrap;
+    justify-content: center;
+    align-items: center;
 }
+
 #title a {
   text-decoration: none;
 }
+
 #title img {
   margin: 15%;
   margin-bottom: 0%;
@@ -95,34 +104,49 @@ body {
   width: auto;
   }
 }
+
 #title a:link {
   color: inherit;
 }
+
 #title a:visited {
   color: inherit;
 }
+
+#title img {
+  margin: 15%;
+  height: 120px;
+  width: auto;
+}
+
 #navBar {
   width: 100%;
   background-color: inherit;
   color: var(--offWhite);
-  font-size: 1.7em;
+  font-size: 1.5em;
   display: flex;
-    justify-content: center;
+  justify-content: center;
   font-family: var(--mainFont);
   font-weight: 400;
-  margin-bottom: 1.5em;
-  box-shadow: 2px 6px 6px rgba(10,10,20, 0.25);
+  margin-bottom: 1em;
+  box-shadow: 0px 0px 8px 6px rgba(10, 10, 20, 0.25);
+
+  z-index: 2;
+  position: sticky;
 }
-#navBar a{
+
+#navBar a {
   text-decoration: none;
   color: inherit;
   padding-left: 3%;
   padding-right: 3%;
   transition: 300ms;
 }
+
 #navBar a:link a:visited {
   color: inherit;
 }
+
 #navBar a:hover {
   color: var(--blueGray);
   background-color: var(--offWhite);
