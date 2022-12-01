@@ -258,7 +258,7 @@ img.slide {
   width: 40em;
 }
 
-/* .topSlide{
+.topSlide{
   opacity: 0;
   transform: translate(0, -10vh);
   transition: all 1s;
@@ -281,7 +281,7 @@ img.slide {
   position: absolute;
   top: 0;
   animation: slide 5s infinite;
-} */
+}
 
 @keyframes fade {
   0% {
@@ -301,8 +301,8 @@ img.slide {
   100% {
     transform: translateX(-100%);
   }
-
-/* .roller {
+}
+.roller {
   height: 4.125rem;
   line-height: 4rem; 
   position: relative;
@@ -311,7 +311,7 @@ img.slide {
   display: flex;
   justify-content: center;
   align-items: center;
-} */
+}
 
 @keyframes fade {
   0% {
