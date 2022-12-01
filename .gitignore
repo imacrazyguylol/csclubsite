@@ -2,3 +2,4 @@
 replit.nix
 package.json
 node_modules
+.vscode
