@@ -28,9 +28,39 @@ font-style: normal; -->
 
 </head>
 
-<body id="main">
+<body>
 
     <div id="wrapper">
+      <div id="menuContainer" onclick="menuFunction(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+        <div id="miniNav">
+          <a href="" style="background-color: #F5F5F5; color: #46545D">
+                <div>
+                    <p>Home</p>
+                </div>
+            </a>
+
+            <a href="./pages/blog/blog.html">
+                <div>
+                    <p>Blog</p>
+                </div>
+            </a>
+
+            <a href="./pages/projects/projects.html">
+                <div>
+                    <p>Projects</p>
+                </div>
+            </a>
+
+            <a href="./pages/about/about.html">
+                <div>
+                    <p>About us</p>
+                </div>
+            </a>
+        </div>
+      </div>
         <div id="top">
             <p class="marquee">wheeeeeeeeeeeeee this is a marquee you should join cs club</p>
         </div>
@@ -45,7 +75,7 @@ font-style: normal; -->
             </div>
 
         </div>
-        <div id="navBar">
+        <div class="navBar">
 
             <a href="" style="background-color: #F5F5F5; color: #46545D">
                 <div>
@@ -59,13 +89,7 @@ font-style: normal; -->
                 </div>
             </a>
 
-            <!-- <a href="./pages/member/member.html">
-                <div>
-                    <p>Meet our members</p>
-                </div>
-            </a> -->
-
-            <a href="">
+            <a href="./pages/projects/projects.html">
                 <div>
                     <p>Projects</p>
                 </div>
@@ -109,14 +133,15 @@ font-style: normal; -->
                 </div>
             </div>
         </div>
-    </div>
 
     <div id="footer">
         <p>Come find us at C211 at Arundel High School! <br>Contact Mr. Lee, our club supervisor at cblee@aacps.org.
         </p>
     </div>
+  </div>
 
     <!-- SCRIPTS -->
+    <script src="./script.js"></script>
     <script type="module" src="./src/slideshow.js"></script>
     <script src="https://unpkg.com/react@18/umd/react.production.min.js" crossorigin></script>
     <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js" crossorigin></script>

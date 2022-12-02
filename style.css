@@ -112,7 +112,7 @@ body {
 #title a:visited {
   color: inherit;
 }
-#navBar {
+.navBar {
   width: 100%;
   background-color: inherit;
   color: var(--offWhite);
@@ -124,7 +124,7 @@ body {
   margin-bottom: 1.5em;
   box-shadow: 2px 6px 6px rgba(10,10,20, 0.25);
 }
-#navBar a{
+.navBar a{
   text-decoration: none;
   color: inherit;
   padding-left: 3%;
@@ -132,10 +132,10 @@ body {
   transition: 300ms;
 }
 
-#navBar a:link a:visited {
+.navBar a:link a:visited {
   color: inherit;
 }
-#navBar a:hover {
+.navBar a:hover {
   color: var(--blueGray);
   background-color: var(--offWhite);
 }
@@ -295,6 +295,87 @@ img.slide {
   align-items: center;
 }
 
+/*Menu icon*/
+
+#menuContainer {
+  width: 5%;
+  cursor: pointer;
+  position: fixed;
+  z-index: 1;
+  top: 0vh;
+  margin: 2%;
+  opacity: 0;
+  transition: 1s;
+  transform: translate(0, -5vh) rotate(45deg);
+}
+#menuContainer.visible {
+  cursor: pointer;
+  position: fixed;
+  z-index: 1;
+  top: 5vh;
+  opacity: 1;
+  transform: translate(0,0) rotate(0deg);
+}
+
+.bar1, .bar2, .bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: white;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+/* Rotate first bar */
+.change .bar1 {
+  transform: translate(0, 11px) rotate(-45deg);
+}
+
+/* Fade out the second bar */
+.change .bar2 {opacity: 0;}
+
+/* Rotate last bar */
+.change .bar3 {
+  transform: translate(0, -11px) rotate(45deg);
+}
+
+#miniNav {
+  width: 0vw;
+  height: 0vh;
+  transition: all 1s;
+  opacity: 0;
+  color: var(--offWhite);
+  font-size: 1.7em;
+  display: flex;
+  border: solid var(--blueGray) 3px;
+  justify-content: center;
+  font-family: var(--mainFont);
+  font-weight: 400;
+  background-color: rgba(48,58,64,0.5);
+}
+#miniNav a{
+  text-decoration: none;
+  color: inherit;
+  padding-left: 3%;
+  padding-right: 3%;
+  transition: 300ms;
+}
+
+#miniNav a:link a:visited {
+  color: inherit;
+}
+#miniNav a:hover {
+  color: var(--blueGray);
+  background-color: var(--offWhite);
+}
+
+@keyframes enlarge {
+  0% {height: 0vh; width: 0vw;opacity: 0;}
+  100% {height: 10vh; width: 32.8vw; opacity: 1;}
+}
+@keyframes depress {
+  0% {height: 10vh; width: 32.8vw; opacity: 1;}
+  100% {height: 0vh; width: 0vw; opacity: 0;}
+}
 @keyframes fade {
   0% {
     opacity: 0.4;
