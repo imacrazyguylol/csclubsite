@@ -1,5 +1,9 @@
 let topSlideArr = document.querySelectorAll(".topSlide");
 let leftSlideArr = document.querySelectorAll(".leftSlide");
+let menu = document.getElementById("menuContainer");
+let navBar = document.querySelectorAll(".navBar");
+let miniNav = document.getElementById("miniNav");
+let isMenuClicked = false;
 window.addEventListener('scroll', fadeIn ); 
 function fadeIn() {
     for (var i = 0; i < topSlideArr.length; i++) {
@@ -11,8 +15,8 @@ function fadeIn() {
             elem.classList.remove("visible");
         }
     }
-
-  for(var i = 0; i < leftSlideArr.length; i++) {
+    
+    for(var i = 0; i < leftSlideArr.length; i++) {
         var elem = leftSlideArr[i];
         var distInView = elem.getBoundingClientRect().top - window.innerHeight + 20;
         if(distInView < 0) {
@@ -20,8 +24,33 @@ function fadeIn() {
         } else {
             elem.classList.remove("visible");
         }
-
-
+    }
+  for (var i = 0; i < navBar.length; i++) {
+        var elem = navBar[i]
+        var distInView = elem.getBoundingClientRect().top - window.innerHeight + 700;
+        if (distInView < 0) {
+            menu.classList.add("visible");
+        } else {
+          menu.classList.remove("visible");
+          if(isMenuClicked) menuFunction(menu);
+        }
     }
 }
 fadeIn();
+
+function menuFunction(x) {
+  x.classList.toggle("change");
+  if(!isMenuClicked) {
+    miniNav.style.animation = "enlarge 0.7s ease-in-out";
+    miniNav.style.height = "10vh";
+    miniNav.style.width = "32.8vw";
+    miniNav.style.opacity = "1";
+    isMenuClicked = true;
+  } else {
+    miniNav.style.animation = "depress 0.7s ease-in-out";
+    miniNav.style.height = "0vh";
+    miniNav.style.width = "0vw";
+    miniNav.style.opacity = "0";
+    isMenuClicked = false;
+  }
+}

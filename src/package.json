@@ -1,0 +1,28 @@
+{
+  "name": "csclubsite",
+  "version": "1.0.0",
+  "description": "yeah",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/imacrazyguylol/csclubsite.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/imacrazyguylol/csclubsite/issues"
+  },
+  "homepage": "https://github.com/imacrazyguylol/csclubsite#readme",
+  "dependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-react-app": "^3.1.2",
+    "react": "^18.2.0",
+    "reactjs": "^1.0.0"
+  },
+  "presets": [
+    "@babel/preset-react"
+  ]
+}
