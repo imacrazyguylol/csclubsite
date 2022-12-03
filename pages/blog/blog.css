@@ -4,8 +4,7 @@
   --darkModeGray: #303A40;
   --blueGray: #46545D;
   --offWhite: #F5F5F5;
-  --lightGray: rgb(192, 192, 200);
-  
+
   --mainFont: input-mono, monospace;
 }
 
@@ -29,7 +28,7 @@ body {
 @media (min-height: 1200px) {
   body {
   text-align: center;
-  margin: 0 auto;
+  margin: 0;
   padding: 0;
   font-size: 17px;
   line-height: 1.231;
@@ -37,7 +36,8 @@ body {
   overflow-x: hidden;
   height: 100%;
   width: 100%;
-  background-color: var(--darkModeGray);
+
+  background-color: var(--darkModeGray) ;
 }
 }
 
@@ -74,6 +74,7 @@ body {
   font-weight: 400;
   font-size: 1.6em;
   line-height: 1;
+  
 }
 
 #title {
@@ -93,9 +94,9 @@ body {
   text-decoration: none;
 }
 
-
 #title img {
   margin: 15%;
+  margin-bottom: 0%;
   height: 120px;
   width: auto;
 }
@@ -116,22 +117,19 @@ body {
 #title a:visited {
   color: inherit;
 }
-
-#navBar {
+.navBar {
   width: 100%;
   background-color: inherit;
   color: var(--offWhite);
-  font-size: 1.5em;
+  font-size: 1.7em;
   display: flex;
-  justify-content: center;
+    justify-content: center;
   font-family: var(--mainFont);
   font-weight: 400;
-  box-shadow: 0px 0px 8px 6px rgba(10, 10, 20, 0.25);
-
-  z-index: 2;
-  position: sticky;
+  margin-bottom: 1.5em;
+  box-shadow: 2px 6px 6px rgba(10,10,20, 0.25);
 }
-#navBar a{
+.navBar a {
   text-decoration: none;
   color: inherit;
   padding-left: 3%;
@@ -139,10 +137,10 @@ body {
   transition: 300ms;
 }
 
-#navBar a:link a:visited {
+.navBar a:link a:visited {
   color: inherit;
 }
-#navBar a:hover {
+.navBar a:hover {
   color: var(--blueGray);
   background-color: var(--offWhite);
 }
@@ -213,6 +211,86 @@ body {
 
 .blogText h2 {
   text-align: center;
+}
+
+#menuContainer {
+  width: 5%;
+  cursor: pointer;
+  position: fixed;
+  z-index: 1;
+  top: 0vh;
+  margin: 2%;
+  opacity: 0;
+  transition: 1s;
+  transform: translate(0, -5vh) rotate(45deg);
+}
+#menuContainer.visible {
+  cursor: pointer;
+  position: fixed;
+  z-index: 1;
+  top: 5vh;
+  opacity: 1;
+  transform: translate(0,0) rotate(0deg);
+}
+
+.bar1, .bar2, .bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: white;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+/* Rotate first bar */
+.change .bar1 {
+  transform: translate(0, 11px) rotate(-45deg);
+}
+
+/* Fade out the second bar */
+.change .bar2 {opacity: 0;}
+
+/* Rotate last bar */
+.change .bar3 {
+  transform: translate(0, -11px) rotate(45deg);
+}
+
+#miniNav {
+  width: 0vw;
+  height: 0vh;
+  transition: all 1s;
+  opacity: 0;
+  color: var(--offWhite);
+  font-size: 1.7em;
+  display: flex;
+  border: solid var(--blueGray) 3px;
+  justify-content: center;
+  font-family: var(--mainFont);
+  font-weight: 400;
+  background-color: rgba(48,58,64,0.5);
+}
+#miniNav a{
+  text-decoration: none;
+  color: inherit;
+  padding-left: 3%;
+  padding-right: 3%;
+  transition: 300ms;
+}
+
+#miniNav a:link a:visited {
+  color: inherit;
+}
+#miniNav a:hover {
+  color: var(--blueGray);
+  background-color: var(--offWhite);
+}
+
+@keyframes enlarge {
+  0% {height: 0vh; width: 0vw;opacity: 0;}
+  100% {height: 10vh; width: 32.8vw; opacity: 1;}
+}
+@keyframes depress {
+  0% {height: 10vh; width: 32.8vw; opacity: 1;}
+  100% {height: 0vh; width: 0vw; opacity: 0;}
 }
 
 @keyframes marquee {
