@@ -15,8 +15,8 @@ function fadeIn() {
             elem.classList.remove("visible");
         }
     }
-  
-  for(var i = 0; i < leftSlideArr.length; i++) {
+    
+    for(var i = 0; i < leftSlideArr.length; i++) {
         var elem = leftSlideArr[i];
         var distInView = elem.getBoundingClientRect().top - window.innerHeight + 20;
         if(distInView < 0) {
