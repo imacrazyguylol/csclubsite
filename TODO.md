@@ -3,3 +3,16 @@ Specifically involving the blog section. Now my vision isn't very clear, but wha
 Particularly, a system where we could upload a .txt file with a blog post, formatted using one of these already existing systems, and then have a converter through javascript turn it into html & css for the public eye.
 Lmk what you think
 -L
+
+Keep Marquee on all the pages but make the pages scroll down to hide it at the beginning
+
+Footer is Brother
+
+When we scroll down, have a little burger menu appear that allows you to navigate.
+
+Make Table Of Contents dropdown
+
+Nav bar have box shadow only on bottom
+
+Scrolling thing animation enabled on home page.
+-T

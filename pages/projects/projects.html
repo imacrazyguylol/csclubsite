@@ -28,8 +28,41 @@ font-style: normal; -->
 
 </head>
 
-<body id="main">
-    <div id="head">
+<body>
+      <div id="wrapper">
+        <div id="menuContainer" onclick="menuFunction(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+        <div id="miniNav">
+          <a href="../../index.html">
+                <div>
+                    <p>Home</p>
+                </div>
+            </a>
+
+            <a href="../blog/blog.html">
+                <div>
+                    <p>Blog</p>
+                </div>
+            </a>
+
+            <a href="" style="background-color: #F5F5F5; color: #46545D">
+                <div>
+                    <p>Projects</p>
+                </div>
+            </a>
+
+            <a href="../about/about.html">
+                <div>
+                    <p>About us</p>
+                </div>
+            </a>
+        </div>
+      </div>
+        <div id="top">
+            <p class="marquee">Support the Arundel High CS Club by visiting (Merchandise Website)!</p>
+        </div>
         <div id="title">
             <div>
                 <h1><a href="../../index.html">ARUNDEL HIGH CS CLUB</a></h1>
@@ -38,7 +71,7 @@ font-style: normal; -->
                 <a href="../../index.html"><img src="../../assets/logo.png"></a>
             </div>
         </div>
-        <div id="navBar">
+        <div class="navBar">
 
             <a href="../../index.html">
                 <div>
@@ -70,11 +103,10 @@ font-style: normal; -->
                 </div>
             </a>
         </div>
-    </div>
 
     <div id="content">
         <div class="projectContainer">
-            <img class="project" src="../../assets/logo.png" />
+            <img class="project" src="../../assets/html.png" />
             <span class="project caption">This is the caption of the image.</span>
 
             <p class="project">
@@ -83,7 +115,7 @@ font-style: normal; -->
         </div>
 
         <div class="projectContainer">
-            <img class="project" src="../../assets/logo.png" />
+            <img class="project" src="../../assets/godot.png" />
             <span class="project caption">This is the caption of the image.</span>
 
             <p class="project">
@@ -92,7 +124,7 @@ font-style: normal; -->
         </div>
 
         <div class="projectContainer">
-            <img class="project" src="../../assets/logo.png" />
+            <img class="project" src="../../assets/arcade.png" />
             <span class="project caption">This is the caption of the image.</span>
 
             <p class="project">
@@ -101,7 +133,7 @@ font-style: normal; -->
         </div>
 
         <div class="projectContainer">
-            <img class="project" src="../../assets/logo.png" />
+            <img class="project" src="../../assets/3dPrint.png" />
             <span class="project caption">This is the caption of the image.</span>
 
             <p class="project">
@@ -114,9 +146,10 @@ font-style: normal; -->
         <p>Come find us at C211 at Arundel High School! <br>Contact us at [Phone Number or other contact information].
         </p>
     </div>
+   </div>
 
     <!-- SCRIPTS -->
-    <script type="module" src="./src/slideshow.js"></script>
+    <script src="../../script.js"></script>
     <script src="https://unpkg.com/react@18/umd/react.production.min.js" crossorigin></script>
     <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js" crossorigin></script>
 </body>

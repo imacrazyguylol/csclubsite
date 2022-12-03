@@ -1,3 +1,4 @@
+
 <!-- https://github.com/imacrazyguylol/csclubsite/tree/main -->
 
 <!-- font-family: input-mono, monospace;
@@ -20,7 +21,6 @@ font-style: normal; -->
     <link href="https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed:wght@500&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://use.typekit.net/nca3ags.css">
-    <link rel="icon" type="image/png" href="assets/favicon.png">
 
     <!-- OTHER -->
     <link rel="icon" type="image/png" href="./assets/favicon.png">
@@ -28,9 +28,39 @@ font-style: normal; -->
 
 </head>
 
-<body id="main">
+<body>
 
     <div id="wrapper">
+      <div id="menuContainer" onclick="menuFunction(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+        <div id="miniNav">
+          <a href="" style="background-color: #F5F5F5; color: #46545D">
+                <div>
+                    <p>Home</p>
+                </div>
+            </a>
+
+            <a href="./pages/blog/blog.html">
+                <div>
+                    <p>Blog</p>
+                </div>
+            </a>
+
+            <a href="./pages/projects/projects.html">
+                <div>
+                    <p>Projects</p>
+                </div>
+            </a>
+
+            <a href="./pages/about/about.html">
+                <div>
+                    <p>About us</p>
+                </div>
+            </a>
+        </div>
+      </div>
         <div id="top">
             <p class="marquee">wheeeeeeeeeeeeee this is a marquee you should join cs club</p>
         </div>
@@ -45,9 +75,9 @@ font-style: normal; -->
             </div>
 
         </div>
-        <div id="navBar">
+        <div class="navBar">
 
-            <a href="">
+            <a href="" style="background-color: #F5F5F5; color: #46545D">
                 <div>
                     <p>Home</p>
                 </div>
@@ -58,12 +88,6 @@ font-style: normal; -->
                     <p>Blog</p>
                 </div>
             </a>
-
-            <!-- <a href="./pages/member/member.html">
-                <div>
-                    <p>Meet our members</p>
-                </div>
-            </a> -->
 
             <a href="./pages/projects/projects.html">
                 <div>
@@ -83,34 +107,42 @@ font-style: normal; -->
             <div id="leaderboardContainer"></div>
 
             <div id="intro">
-                <h1>Welcome to Arundel CS Club!</h1>
-                <h1>Where Dreams are made, and sleep is lost!</h1>
+                <h1>Welcome to Arundel CS Club! Where:</h1>
+                <h1><div class="roller">
+                  <span id="rollertext">Dreams<br>
+                    Hopes<br>
+                    Anything<br>
+                    Idk</span><br>
+                </div></h1>
+
+                <h1>Reign Supreme!</h1>
             </div>
 
             <div id="contentText">
                 <div class="textPanel">
-                    <h3>Updates and Information</h3>
+                    <h3 class="topSlide">Updates and Information</h3>
                     <ul>
-                        <p>No updates for now</p>
+                        <p class="leftSlide">No updates for now</p>
                     </ul>
                 </div>
                 <div class="textPanel">
-                    <h3>Schedule for CS Club</h3>
+                    <h3 class="topSlide">Schedule for CS Club</h3>
 
                     <ul>
-                        <p>We meet every Friday in C211 during first and second pride. Come join us!</p>
+                        <p class="leftSlide">We meet every Friday in C211 during first and second pride. Come join us!</p>
                     </ul>
                 </div>
             </div>
         </div>
-    </div>
 
     <div id="footer">
-        <p>Come find us at C211 at Arundel High School! <br>Contact us at [Phone Number or other contact information].</p>
+        <p>Come find us at C211 at Arundel High School! <br>Contact Mr. Lee, our club supervisor at cblee@aacps.org.
+        </p>
     </div>
+  </div>
 
     <!-- SCRIPTS -->
-    <script src="script.js"></script>
+    <script src="./script.js"></script>
     <script type="module" src="./src/slideshow.js"></script>
     <script type="module" src="./src/aoclb.js"></script>
     <script src="https://unpkg.com/react@18/umd/react.production.min.js" crossorigin></script>
