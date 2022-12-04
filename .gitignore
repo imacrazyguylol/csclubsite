@@ -3,3 +3,6 @@ replit.nix
 package.json
 node_modules
 .vscode
+components/aoclb_bad.jsx
+src/aoclb_bad.js
+fetchtest.js

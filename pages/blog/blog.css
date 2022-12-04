@@ -126,8 +126,9 @@ body {
     justify-content: center;
   font-family: var(--mainFont);
   font-weight: 400;
-  margin-bottom: 1.5em;
+  /* margin-bottom: 1.5em; */
   box-shadow: 2px 6px 6px rgba(10,10,20, 0.25);
+  position: relative;
 }
 .navBar a {
   text-decoration: none;
