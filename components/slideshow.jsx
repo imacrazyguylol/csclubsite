@@ -1,3 +1,4 @@
+/* const { React, ReactDOM } = require(['react']); */
 const root = ReactDOM.createRoot(document.getElementById("slideshowContainer"));
 
 class Slideshow extends React.Component {
@@ -43,7 +44,6 @@ class Slideshow extends React.Component {
     }
 
     render() {
-        
         return (
             <div className="slides fade">
                 <span className="slidePosition">{this.state.slide} / {Object.keys(this.slides).length}</span>
