@@ -46,7 +46,7 @@ function menuFunction(x) {
   x.classList.toggle("change");
   if(!isMenuClicked) {
     miniNav.style.animation = "enlarge 0.7s ease-in-out";
-    miniNav.style.height = "10vh";
+    miniNav.style.height = "8vh";
     miniNav.style.width = "32.8vw";
     miniNav.style.opacity = "1";
     isMenuClicked = true;

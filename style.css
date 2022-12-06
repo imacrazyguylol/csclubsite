@@ -6,6 +6,7 @@
   --offWhite: #F5F5F5;
 
   --mainFont: input-mono, monospace;
+  --titleFont: "brother-1816", "barlow-condensed", sans-serif;
 }
 
 body {
@@ -75,7 +76,7 @@ body {
 
 #title {
   letter-spacing: 0.1rem;
-  font-family: "brother-1816", "barlow-condensed", sans-serif;
+  font-family: var(--titleFont);
   font-size: 3em;
   text-align: left;
   color: var(--offWhite);
@@ -160,6 +161,11 @@ body {
   font-size: 2.5rem;
 }
 
+div#fun {
+  display: flex;
+    flex-flow: row nowrap;
+}
+
 #slideshowContainer {
   position: relative;
   margin: auto;
@@ -231,6 +237,50 @@ img.slide {
   top: 0;
 }
 
+#leaderboardContainer {
+  position: relative;
+  margin: auto;
+  /* margin-bottom: 1em; */
+  padding: 20px;
+  max-width: 600px;
+  width: 600px;
+  max-height: 450px;
+  height: 450px;
+
+  background: var(--blueGray) none repeat scroll;
+  color: var(--offWhite);
+
+  border: 1px solid var(--offWhite);
+  display: table;
+
+}
+#leaderboardContainer a {color: inherit; text-decoration: none;}
+#leaderboardContainer a:link {color: inherit; text-decoration: none;}
+#leaderboardContainer a:visited {color: inherit; text-decoration: none;}
+
+#leaderboardContainer span.title {
+  color: inherit;
+
+  font-size: 3em;
+  font-family: var(--titleFont);
+  font-weight: 500;
+
+  margin: 5%;
+}
+
+span.lbPlace {
+  color: inherit;
+
+  font-size: 2em;
+}
+span.first { color: gold; }/* maybe some sparkly effects? */
+span.second { color: silver; }
+span.third { color: #994C00}
+
+#leaderboardContainer div.top {
+  display: flex;
+    flex-flow: column nowrap;
+}
 .fade {
   animation: fade 1.5s;
 }
