@@ -3,7 +3,10 @@ let leftSlideArr = document.querySelectorAll(".leftSlide");
 let menu = document.getElementById("menuContainer");
 let navBar = document.querySelectorAll(".navBar");
 let miniNav = document.getElementById("miniNav");
+let textArea = document.getElementById("textArea");
+let tableOfContents = document.getElementById("tableOfContents");
 let isMenuClicked = false;
+let isTableOfContentsClicked = false;
 window.addEventListener('scroll', fadeIn ); 
 function fadeIn() {
     for (var i = 0; i < topSlideArr.length; i++) {
@@ -53,4 +56,20 @@ function menuFunction(x) {
     miniNav.style.opacity = "0";
     isMenuClicked = false;
   }
+}
+
+function enlarge() {
+  if(isTableOfContentsClicked == true) {
+  textArea.style.opacity = "1";
+  tableOfContents.style.animation = "enlargeWriteArea 0.5s";
+  tableOfContents.style.height = "14%";
+  textArea.style.display = "initial";
+  isTableOfContentsClicked = false;
+  } else if(isTableOfContentsClicked == false) {
+    textArea.style.opacity = "0";
+    tableOfContents.style.animation = "depressWriteArea 0.5s";
+    tableOfContents.style.height = "4%";
+    textArea.style.display = "none";
+    isTableOfContentsClicked = true;
+    }
 }
