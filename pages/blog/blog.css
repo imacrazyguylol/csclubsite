@@ -180,7 +180,7 @@ body {
   margin-bottom: 1em;
   padding: 20px;
   width: 80%;
-  height: auto;
+  height: 4%;
   margin: auto;
 }
 
@@ -202,6 +202,16 @@ body {
 #tableOfContents ul,
 #tableOfContents ul li {
   list-style: outside none none;
+}
+
+#textArea {
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+  display: initial;
+}
+#onClicker {
+  cursor: pointer;
 }
 
 .blogText {
@@ -292,6 +302,16 @@ body {
   0% {height: 10vh; width: 32.8vw; opacity: 1;}
   100% {height: 0vh; width: 0vw; opacity: 0;}
 }
+
+@keyframes enlargeWriteArea {
+  0% {height: 4%;}
+  100% {height: 14%;}
+}
+@keyframes depressWriteArea {
+  0% {height: 14%;}
+  100% {height: 4%;}
+}
+
 
 @keyframes marquee {
   0% {
