@@ -7,6 +7,7 @@ let textArea = document.getElementById("textArea");
 let tableOfContents = document.getElementById("tableOfContents");
 let isMenuClicked = false;
 let isTableOfContentsClicked = false;
+
 window.addEventListener('scroll', fadeIn ); 
 function fadeIn() {
     for (var i = 0; i < topSlideArr.length; i++) {
@@ -73,3 +74,4 @@ function enlarge() {
     isTableOfContentsClicked = true;
     }
 }
+

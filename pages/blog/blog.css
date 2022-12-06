@@ -312,6 +312,7 @@ body {
   100% {height: 4%;}
 }
 
+
 @keyframes marquee {
   0% {
     transform: translateX(100%);
