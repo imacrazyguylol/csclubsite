@@ -1,3 +1,4 @@
+const { cookie } = require(['../config.json']);
 const root = ReactDOM.createRoot(document.getElementById("leaderboardContainer"));
 
 class Leaderboard extends React.Component {
@@ -25,7 +26,8 @@ class Leaderboard extends React.Component {
         let scores = {};
 
         const headers = new Headers({
-            Cookie: "session=53616c7465645f5f619a669156899b5d105a3eb7f3437bc90f7eb8a437137e8fd52b9398ea5d1d20f3ee951484c522716d899c143210c6a6aa76984d9ad76cd8",
+            /* Cookie: "session=53616c7465645f5f619a669156899b5d105a3eb7f3437bc90f7eb8a437137e8fd52b9398ea5d1d20f3ee951484c522716d899c143210c6a6aa76984d9ad76cd8", */
+            Cookie: cookie,
         });
 
         const request = new Request(url, {
@@ -54,16 +56,14 @@ class Leaderboard extends React.Component {
                     this.top[i] = scores[Object.keys(scores)[i]];
                 }
             })
-            .catch(error =>{
+            .catch(error => {
                 console.error('an error occurred', error);
-            })
-
-
-
-        this.render();
+            });
     }
 
     render() { // I hate this so much
+        this.updateLeaderboard();
+
         return (
             <div className="leaderboard">
                 <a href="https://adventofcode.com/2022/leaderboard/private/view/1665099"><span className="title">Advent of Code 2022</span></a>
@@ -87,5 +87,4 @@ class Leaderboard extends React.Component {
 
 root.render(<Leaderboard />);
 
-Leaderboard.updateLeaderboard;
-setInterval(Leaderboard.updateLeaderboard, 3600000);
+setInterval(root.render, 3600000);

@@ -8,6 +8,9 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
+var _require = require(['../config.json']),
+    cookie = _require.cookie;
+
 var root = ReactDOM.createRoot(document.getElementById("leaderboardContainer"));
 
 var Leaderboard = function (_React$Component) {
@@ -45,7 +48,8 @@ var Leaderboard = function (_React$Component) {
             var scores = {};
 
             var headers = new Headers({
-                Cookie: "session=53616c7465645f5f619a669156899b5d105a3eb7f3437bc90f7eb8a437137e8fd52b9398ea5d1d20f3ee951484c522716d899c143210c6a6aa76984d9ad76cd8"
+                /* Cookie: "session=53616c7465645f5f619a669156899b5d105a3eb7f3437bc90f7eb8a437137e8fd52b9398ea5d1d20f3ee951484c522716d899c143210c6a6aa76984d9ad76cd8", */
+                Cookie: cookie
             });
 
             var request = new Request(url, {
@@ -124,13 +128,13 @@ var Leaderboard = function (_React$Component) {
             }).catch(function (error) {
                 console.error('an error occurred', error);
             });
-
-            this.render();
         }
     }, {
         key: 'render',
         value: function render() {
             // I hate this so much
+            this.updateLeaderboard();
+
             return React.createElement(
                 'div',
                 { className: 'leaderboard' },
@@ -231,5 +235,4 @@ var Leaderboard = function (_React$Component) {
 
 root.render(React.createElement(Leaderboard, null));
 
-Leaderboard.updateLeaderboard;
-setInterval(Leaderboard.updateLeaderboard, 3600000);
+setInterval(root.render, 3600000);
