@@ -3,7 +3,11 @@ let leftSlideArr = document.querySelectorAll(".leftSlide");
 let menu = document.getElementById("menuContainer");
 let navBar = document.querySelectorAll(".navBar");
 let miniNav = document.getElementById("miniNav");
+let textArea = document.getElementById("textArea");
+let tableOfContents = document.getElementById("tableOfContents");
 let isMenuClicked = false;
+let isTableOfContentsClicked = false;
+
 window.addEventListener('scroll', fadeIn ); 
 function fadeIn() {
     for (var i = 0; i < topSlideArr.length; i++) {
@@ -15,8 +19,8 @@ function fadeIn() {
             elem.classList.remove("visible");
         }
     }
-    
-    for(var i = 0; i < leftSlideArr.length; i++) {
+  
+  for(var i = 0; i < leftSlideArr.length; i++) {
         var elem = leftSlideArr[i];
         var distInView = elem.getBoundingClientRect().top - window.innerHeight + 20;
         if(distInView < 0) {
@@ -54,3 +58,20 @@ function menuFunction(x) {
     isMenuClicked = false;
   }
 }
+
+function enlarge() {
+  if(isTableOfContentsClicked == true) {
+  textArea.style.opacity = "1";
+  tableOfContents.style.animation = "enlargeWriteArea 0.5s";
+  tableOfContents.style.height = "14%";
+  textArea.style.display = "initial";
+  isTableOfContentsClicked = false;
+  } else if(isTableOfContentsClicked == false) {
+    textArea.style.opacity = "0";
+    tableOfContents.style.animation = "depressWriteArea 0.5s";
+    tableOfContents.style.height = "4%";
+    textArea.style.display = "none";
+    isTableOfContentsClicked = true;
+    }
+}
+
