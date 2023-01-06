@@ -47,12 +47,12 @@ function menuFunction(x) {
   if(!isMenuClicked) {
     miniNav.style.animation = "enlarge 0.7s ease-in-out";
     miniNav.style.height = "10vh";
-    miniNav.style.width = "33vw";
+    miniNav.style.width = "32.8vw";
     miniNav.style.opacity = "1";
     isMenuClicked = true;
   } else {
     miniNav.style.animation = "depress 0.7s ease-in-out";
-    miniNav.style.height = "0vh";
+    miniNav.style.height = "4vh";
     miniNav.style.width = "0vw";
     miniNav.style.opacity = "0";
     isMenuClicked = false;
