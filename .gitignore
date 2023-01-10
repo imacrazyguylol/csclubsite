@@ -8,3 +8,5 @@ components/aoclb_bad.jsx
 src/aoclb_bad.js
 fetchtest.js
 config.json
+.htaccess
+app.js
